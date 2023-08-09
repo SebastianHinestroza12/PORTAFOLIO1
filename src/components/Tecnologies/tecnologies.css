@@ -1,0 +1,66 @@
+.container-tecno{
+  flex: 1;
+  /* background-color: rgb(118, 226, 104); */
+  height: 380px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  border-style: solid;
+  border-width: 4px;
+  border-image: linear-gradient(45deg, #FFC500,  #C21500) 1;
+}
+
+.gradient-tecno{
+  border-radius: 7px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 30px -3px rgba(255,165,0,1);
+  -moz-box-shadow: 0px 0px 30px -3px rgba(255,165,0,1);
+  box-shadow: 0px 0px 20px -4px rgba(255,165,0,1);
+}
+
+.title-tecno{
+  /* background-color: aqua; */
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.tecno{
+  height: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  /* background-color: blueviolet; */
+}
+
+.icon-tecno{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  /* background-color: rgb(25, 184, 184); */
+}
+
+.tecno-text{
+  color: white;
+  margin-top: .625rem;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  /* background-color: black; */
+  width: 100%;
+  text-align: center;
+}
+
+.imagen-tecno{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: brown; */
+}

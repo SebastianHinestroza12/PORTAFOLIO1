@@ -1,0 +1,56 @@
+
+.section-margin{
+  margin: 0 5rem;
+}
+
+.projects{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6rem;
+}
+
+.projects p{
+  color: white;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.container-services{
+  /* background-color: aqua; */
+  margin-bottom: 7rem;
+}
+
+.title-services{
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.services{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 60%;
+  margin: 3rem auto 0 auto;
+  grid-gap: 4.375rem 17.75rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.container-tecnologies{
+  /* background-color: rgb(235, 212, 8); */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.tecnologie-text {
+  color: white;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+}

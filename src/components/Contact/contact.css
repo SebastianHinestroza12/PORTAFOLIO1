@@ -1,0 +1,27 @@
+.contact{
+  border-radius: 76px 76px 0px 0px;
+  -moz-border-radius: 76px 76px 0px 0px;
+  -webkit-border-radius: 76px 76px 0px 0px;
+  margin-top: 9rem;
+}
+
+.container-flex{
+  /* background-color: aqua; */
+  padding: 1.2rem 1.2rem 0 1.2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.wrap-one{
+  /* background-color: aqua; */
+  flex: 1;
+}
+.wrap-two{
+  flex: 1;
+  display: flex;
+  justify-content: right;
+  /* background-color: blueviolet; */
+}

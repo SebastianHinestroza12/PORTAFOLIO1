@@ -1,0 +1,30 @@
+.container-about{
+  height: 19.99rem;
+  display: flex;
+  margin-bottom: 12rem;
+}
+.profile{
+  /* background-color: blue; */
+  width: 25%;
+}
+
+.about{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+  /* background-color: orange; */
+  flex: 1;
+}
+
+.about p:first-child{
+  font-size: 25px;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.about p:nth-child(2){
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.719);
+  text-align: justify;
+}
