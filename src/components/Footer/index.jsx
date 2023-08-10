@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, chakra, Container, Stack, Text, useColorModeValue, VisuallyHidden, } from '@chakra-ui/react'
-import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
+import { FaInstagram, FaLinkedin, FaFacebook } from 'react-icons/fa'
 import { Logo} from '../Logo'
 import './footer.css'
 
@@ -14,6 +14,7 @@ const SocialButton = ({children,label,href}) => {
       h={8}
       cursor={'pointer'}
       as={'a'}
+      target='_blank'
       href={href}
       display={'inline-flex'}
       alignItems={'center'}
@@ -43,13 +44,10 @@ export const Footer = ()=> {
         <Logo />
         <Text>© 2023 Sebastian Mena. All rights reserved</Text>
         <Stack direction={'row'} spacing={6}>
-          <SocialButton label={'Twitter'} href={'#'}>
-            <FaTwitter />
+          <SocialButton label={'Facebook'} href={'https://www.facebook.com/sebastian.menahinestrosa/'}>
+            <FaFacebook />
           </SocialButton>
-          <SocialButton label={'YouTube'} href={'#'}>
-            <FaYoutube />
-          </SocialButton>
-          <SocialButton label={'Instagram'} href={'#'}>
+          <SocialButton label={'Instagram'} href={'https://www.instagram.com/sebastianmh12'}>
             <FaInstagram />
           </SocialButton>
         </Stack>

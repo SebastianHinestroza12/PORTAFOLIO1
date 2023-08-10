@@ -1,7 +1,13 @@
 import React from 'react'
 import './projects.css'
+import { saveAs } from 'file-saver';
 
-export const Projects = ({ numberProject, title, description, image, alt, invertContent }) => {
+export const Projects = ({ numberProject, title, description, image, alt, invertContent, apkUrl, href }) => {
+
+  const handleImageClick = () => {
+    saveAs('/src/assets/APK/app-release.apk', 'movie-app.apk');
+  };
+
   return (
     <>
       {
@@ -9,11 +15,14 @@ export const Projects = ({ numberProject, title, description, image, alt, invert
           <div className='container-projects'>
             <div className='container-image-project'>
               <div className="square-frame">
-                <img
-                  className="framed-image"
-                  src={image}
-                  alt={alt}
-                />
+                <a href={href} target='_blank'>
+                  <img
+                    className="framed-image"
+                    src={image}
+                    alt={alt}
+                    onClick={apkUrl ? handleImageClick : null} 
+                  />
+                </a>
               </div>
             </div>
             <div className='description'>
@@ -32,17 +41,19 @@ export const Projects = ({ numberProject, title, description, image, alt, invert
             </div>
             <div className='container-image-project'>
               <div className="square-frame">
-                <img
-                  className="framed-image"
-                  src={image}
-                  alt={alt}
-                />
+                <a href={href} target='_blank'>
+                  <img
+                    className="framed-image"
+                    src={image}
+                    alt={alt}
+                    onClick={apkUrl ? handleImageClick : null}  
+                  />
+                </a>
               </div>
             </div>
           </div>
-
       }
-  </>
+    </>
   )
 }
 

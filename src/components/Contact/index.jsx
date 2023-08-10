@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Flex, Box, Heading, Text, IconButton, Button, VStack, HStack, Wrap, WrapItem, FormControl, FormLabel, Input, InputGroup, InputLeftElement, Textarea, } from '@chakra-ui/react'
-import { MdPhone, MdEmail, MdLocationOn, MdFacebook, MdOutlineEmail, } from 'react-icons/md'
-import { BsGithub, BsDiscord, BsPerson } from 'react-icons/bs'
+import { MdPhone, MdEmail, MdLocationOn, MdFacebook, MdOutlineEmail } from 'react-icons/md'
+import { BsGithub, BsPerson, BsLinkedin } from 'react-icons/bs'
 import { Footer } from '../Footer';
 import './contact.css'
 
@@ -74,71 +74,70 @@ export const Contact = () => {
                     spacing={5}
                     px={5}
                     alignItems="flex-start">
-                    <IconButton
-                      aria-label="facebook"
-                      // variant="ghost"
-                      size="lg"
-                      isRound={true}
-                      _hover={{ bg: '#0D74FF' }}
-                      icon={<MdFacebook size="28px" />}
-                    />
-                    <IconButton
-                      aria-label="github"
-                      // variant="ghost"
-                      size="lg"
-                      isRound={true}
-                      _hover={{ bg: 'purple' }}
-                      icon={<BsGithub size="28px" />}
-                    />
-                    <IconButton
-                      aria-label="discord"
-                      // variant="unstyled"
-                      size="lg"
-                      isRound={true}
-                      _hover={{ bg: '#5562EA' }}
-                      icon={<BsDiscord size="28px" />}
-                    />
+                    <a href='https://github.com/SebastianHinestroza12' target='_blank'>
+                      <IconButton
+                        href="https://www.facebook.com/tu-perfil"
+                        aria-label="github"
+                        size="lg"
+                        isRound={true}
+                        _hover={{ bg: 'purple' }}
+                        icon={<BsGithub size="28px" />}
+                      />
+                    </a>
+                    <a href='https://www.linkedin.com/in/sebastian-mena12/' target='_blank'>
+                      <IconButton
+                        aria-label="Linkedin"
+                        size="lg"
+                        isRound={true}
+                        _hover={{ bg: '#0D74FF' }}
+                        icon={<BsLinkedin size="28px" />}
+                      />
+                    </a>
                   </HStack>
                 </Box>
               </WrapItem>
               <WrapItem className='wrap-two'>
                 <Box w={'full'} bg="#101630" borderRadius="lg">
                   <Box m={8} color="#FFF">
-                    <VStack spacing={5}>
-                      <FormControl id="name">
-                        <FormLabel>Your Name</FormLabel>
-                        <InputGroup borderColor="#E0E1E7">
-                          <InputLeftElement pointerEvents="none">
-                            <BsPerson color="gray.800" />
-                          </InputLeftElement>
-                          <Input type="text" size="md" />
-                        </InputGroup>
-                      </FormControl>
-                      <FormControl id="name">
-                        <FormLabel>Mail</FormLabel>
-                        <InputGroup borderColor="#E0E1E7">
-                          <InputLeftElement pointerEvents="none">
-                            <MdOutlineEmail color="gray.800" />
-                          </InputLeftElement>
-                          <Input type="text" size="md" />
-                        </InputGroup>
-                      </FormControl>
-                      <FormControl id="name">
-                        <FormLabel>Message</FormLabel>
-                        <Textarea
-                          borderColor="gray.300"
-                          _hover={{
-                            borderRadius: 'gray.300',
-                          }}
-                          placeholder="message"
-                        />
-                      </FormControl>
-                      <FormControl id="name" float="right">
-                        <Button variant="solid" bg="#FFA500" color="white" _hover={{}}>
-                          Send Message
-                        </Button>
-                      </FormControl>
-                    </VStack>
+                    <form action="https://formspree.io/f/xnqkppbd" method="POST">
+                      <VStack spacing={5}>
+                        <FormControl id="name">
+                          <FormLabel>Your Name</FormLabel>
+                          <InputGroup borderColor="#E0E1E7">
+                            <InputLeftElement pointerEvents="none">
+                              <BsPerson color="gray.800" />
+                            </InputLeftElement>
+                            <Input name='name' type="text" size="md" required />
+                          </InputGroup>
+                        </FormControl>
+                        <FormControl id="email">
+                          <FormLabel>Mail</FormLabel>
+                          <InputGroup borderColor="#E0E1E7">
+                            <InputLeftElement pointerEvents="none">
+                              <MdOutlineEmail color="gray.800" />
+                            </InputLeftElement>
+                            <Input name='email' type="text" size="md" required />
+                          </InputGroup>
+                        </FormControl>
+                        <FormControl id="message">
+                          <FormLabel>Message</FormLabel>
+                          <Textarea
+                            required
+                            name='message'
+                            borderColor="gray.300"
+                            _hover={{
+                              borderRadius: 'gray.300',
+                            }}
+                            placeholder="message"
+                          />
+                        </FormControl>
+                        <FormControl id="submit" float="right">
+                          <Button type="submit" variant="solid" bg="#FFA500" color="white" _hover={{}}>
+                            Send Message
+                          </Button>
+                        </FormControl>
+                      </VStack>
+                    </form>
                   </Box>
                 </Box>
               </WrapItem>

@@ -16,27 +16,46 @@ function App() {
         <Job />
         <AboutMe />
       </div>
-      <div className='section-margin'>
+      <div className='section-margin' id='projects'>
         <div className='projects'>
           <p>projects</p>
         </div>
         <Projects
           numberProject={1}
-          title={'Ecommerce Projects'}
-          image={ 'https://res.cloudinary.com/dafsjo7al/image/upload/v1687084691/e19d57a2-00be-4377-ae6d-0e390d3d5fed_qzj30g.jpg'}
-          description={'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.'}
+          title={'Ecommerce Qatar 2022'}
+          image={'https://res.cloudinary.com/dafsjo7al/image/upload/v1691604917/ecommerce_bunmxh.png'}
+          description={'¡Descubre la emoción del Mundial de Qatar 2022 a través de nuestro eCommerce colaborativo! Te presentamos una selección excepcional de productos temáticos del torneo, cuidadosamente elegidos y diseñados por nuestro apasionado equipo de ocho aficionados al fútbol. Desde camisetas oficiales hasta artículos coleccionables, te invitamos a explorar y ser parte de esta experiencia única que celebra la pasión y la magia del fútbol en Qatar 2022. ¡Únete a nosotros en este emocionante viaje futbolístico y encuentra productos que harán que vivas el Mundial al máximo!'}
           alt={'Projects1'}
+          href={'https://eccomercepf.vercel.app'}
         /> 
         <Projects
           numberProject={2}
-          title={'Ecommerce Projects'}
-          image={ 'https://res.cloudinary.com/dafsjo7al/image/upload/v1687084691/e19d57a2-00be-4377-ae6d-0e390d3d5fed_qzj30g.jpg'}
-          description={'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.'}
+          title={'movie mobile app'}
+          image={'https://res.cloudinary.com/dafsjo7al/image/upload/v1691618520/Group_1_rt7lxt.png'}
+          description={'Explora el apasionante universo cinematográfico con nuestra app de películas móvil. Descubre los últimos estrenos, explora detalles sobre actores y presupuestos, y sumérgete en el detrás de escena de tus películas favoritas. ¡Toda la magia del cine en la palma de tu mano!'}
           alt={'Projects2'}
+          apkUrl
+          invertContent
+        />
+        <Projects
+          numberProject={3}
+          title={'Dog application'}
+          image={'https://res.cloudinary.com/dafsjo7al/image/upload/v1691623708/dog_bhjuoz.png'}
+          description={'Explora, personaliza y ordena perros en nuestra app canina. Encuentra la raza perfecta con filtros detallados o crea tu compañero ideal. ¡Lleva la experiencia de tener un perro a tu pantalla!'}
+          alt={'Projects3'}
+          href={'https://pi-dog-main.vercel.app'}
+        />
+        <Projects
+          numberProject={4}
+          title={'task application'}
+          image={'https://res.cloudinary.com/dafsjo7al/image/upload/v1691623708/task2_rmoujm.png'}
+          description={'Optimiza tu productividad con nuestra intuitiva aplicación de tareas. Simplifica tu día a día al agregar, completar y eliminar tareas con facilidad. Mantén un control total sobre tus responsabilidades y logra más en menos tiempo.'}
+          alt={'Projects4'}
+          href={'https://aplicationtask.netlify.app'}
           invertContent
         /> 
       </div>
-      <div className='container-services section-margin'>
+      <div className='container-services section-margin' id='services'>
         <p className='title-services'>services</p>
         <div className='services'>
           <Services
@@ -59,7 +78,7 @@ function App() {
             nameIcon={'simple-icons:freelancer'} />
         </div>
       </div>
-      <div className='tecnologies section-margin'>
+      <div className='tecnologies section-margin' id='technologies'>
         <p className='tecnologie-text'>Tecnologíes</p>
         <div className='container-tecnologies'>
           <Tecnologies tecnologies={frontendData} title={'frontend'}/>
@@ -67,7 +86,7 @@ function App() {
           <Tecnologies tecnologies={toolData} title={'tools'}/>
         </div>
       </div>
-      <div>
+      <div id='contact'>
         <Contact/>
       </div>
     </>

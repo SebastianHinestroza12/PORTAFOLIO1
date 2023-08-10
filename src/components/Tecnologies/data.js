@@ -10,7 +10,6 @@ const frontendData = [
 ];
 
 const backendData = [
-  // {   name: 'Python', icon: 'logos:python' },
   { name: 'node js', icon: 'logos:nodejs-icon-alt' },
   { name: 'express', icon: 'skill-icons:expressjs-dark' },
   { name: 'sequelize', icon: 'logos:sequelize' },
@@ -29,7 +28,8 @@ const toolData = [
   { name: 'visual code', icon: 'logos:visual-studio-code' },
   { name: 'jira', icon: 'logos:jira' },
   { name: 'bootstrap', icon: 'logos:bootstrap' },
-  // {   name: 'chakra ui', icon: 'logos:react' },
+  { name: 'android studio', icon: 'devicon:androidstudio' },
+  { name: 'virtual box', icon: 'simple-icons:virtualbox' },
 ];
 
 export { frontendData, toolData, backendData };

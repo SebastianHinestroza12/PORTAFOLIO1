@@ -1,35 +1,30 @@
 import React from "react";
 import {Logo} from '../Logo'
-import {
-  Box,
-  Flex,
-  HStack,
-  IconButton,
-  Button,
-  useDisclosure,
-  Stack,
-} from "@chakra-ui/react";
+import { Box, Flex, HStack, IconButton, Button, useDisclosure, Stack, } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
 
 
-const Links = ["Home", "About Me", "Projects", "Services", "Experience"];
+const linkNames = ["Home", "About Me", "Projects", "Services", "Technologies"];
+const linkTargets = ["#home", "#about", "#projects", "#services", "#technologies"];
+
 
 const NavLink = (props) => {
-  const { children } = props;
+  const { children, target } = props;
   return (
     <Box
       as="a"
       px={2}
       py={1}
       color={'white'}
+      textTransform={'uppercase'}
       rounded={"md"}
       _hover={{
         textDecoration: "none",
         bg: 'white',
         color: '#000'
       }}
-      href={"#"}
+      href={target}
     >
       {children}
     </Box>
@@ -62,8 +57,10 @@ export const Navbar = ()=> {
               spacing={10}
               display={{ base: "none", md: "flex" }}
             >
-              {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+              {linkNames.map((name, index) => (
+                <NavLink key={name} target={linkTargets[index]}>
+                  {name}
+                </NavLink>
               ))}
             </HStack>
           </HStack>
@@ -72,6 +69,10 @@ export const Navbar = ()=> {
               variant={"solid"}
               bgGradient={"linear(to-tr, #C21500, #FFC500)"}
               size={"md"}
+              onClick={() => {
+                window.location.href = "#contact";
+              }}
+
             >
               Contact
             </Button>
@@ -81,8 +82,10 @@ export const Navbar = ()=> {
         {isOpen ? (
           <Box pb={4} display={{ md: "none" }}>
             <Stack as={"nav"} spacing={4}>
-              {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+              {linkNames.map((name, index) => (
+                <NavLink key={name} target={linkTargets[index]}>
+                  {name}
+                </NavLink>
               ))}
             </Stack>
           </Box>
