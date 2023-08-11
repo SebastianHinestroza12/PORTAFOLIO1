@@ -76,7 +76,7 @@
 @media (min-width: 320px) and (max-width: 480px) {
   .section-margin{
     margin: 0 1rem;
-    /* background-color: rgb(88, 52, 3); */
+    background-color: rgb(88, 52, 3);
   }
   .services{
     width: 100%;

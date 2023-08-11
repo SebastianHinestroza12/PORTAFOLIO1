@@ -88,9 +88,9 @@ function App() {
           </div>
         </div>
       </div>
-      <div id='contact'>
+      {/* <div id='contact'>
         <Contact/>
-      </div>
+      </div> */}
     </>
   )
 }
