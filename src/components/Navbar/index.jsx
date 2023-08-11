@@ -44,6 +44,7 @@ export const Navbar = ()=> {
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
             aria-label={"Open Menu"}
             display={{ md: "none" }}
+            bg={'#FFF'}
             onClick={isOpen ? onClose : onOpen}
           />
           <Flex>
@@ -65,7 +66,7 @@ export const Navbar = ()=> {
               ))}
             </HStack>
           </HStack>
-          <Flex alignItems={"center"}>
+          <Flex className="mobile-none" alignItems={"center"}>
             <Link href="#contact">
               <Button
                 variant={"solid"}

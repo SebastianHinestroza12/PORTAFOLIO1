@@ -12,4 +12,8 @@
   .navigation{
     display: none !important;
   }
+  .mobile-none{
+    display: none !important;
+    /* background-color: aquamarine; */
+  }
 }
