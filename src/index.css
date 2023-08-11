@@ -1,31 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-:root {
-  --chakra-fontSizes-lg: 18px;
-}
-
-
 html, body{
   font-family: 'Poppins', sans-serif;
   background-color: #101630;
   scroll-behavior: smooth;
-}
-
-*{
-  box-sizing: 0;
-  margin: 0;
-  padding: 0;
-}
-
-li{
-  list-style: none;
-}
-
-a{
-  text-decoration: none;
-}
-
-button{
-  border: none;
-  background: none;
 }

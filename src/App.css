@@ -79,7 +79,7 @@
     background-color: rgb(88, 52, 3);
   }
   .services{
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     flex-direction: column;
     margin: 3rem auto 0 auto;
