@@ -1,7 +1,7 @@
 import React from 'react'
-import { Container, Flex, Box, Heading, Text, IconButton, Button, VStack, HStack, Wrap, WrapItem, FormControl, FormLabel, Input, InputGroup, InputLeftElement, Textarea, } from '@chakra-ui/react'
-import { MdPhone, MdEmail, MdLocationOn, MdFacebook, MdOutlineEmail } from 'react-icons/md'
-import { BsGithub, BsPerson, BsLinkedin } from 'react-icons/bs'
+import { Container, Flex, Link, Box, Heading, Text, IconButton, Button, VStack, HStack, Wrap, WrapItem, FormControl, FormLabel, Input, InputGroup, InputLeftElement, Textarea, } from '@chakra-ui/react'
+import { MdPhone, MdEmail, MdLocationOn, MdOutlineEmail } from 'react-icons/md'
+import { BsGithub, BsPerson, BsLinkedin, BsWhatsapp } from 'react-icons/bs'
 import { Footer } from '../Footer';
 import './contact.css'
 
@@ -11,23 +11,21 @@ export const Contact = () => {
   return (
     <Container
       className='contact'
-      // bg={'#02054B'}
       bgGradient={gradient}
       maxW="full"
       centerContent
       overflow="hidden"
     >
-      <Flex className='container-flex'>
+      <Flex className='container-flex'  >
         <Box
-          // bg="#020"
           color="white"
           w={'full'}
           borderRadius="lg"
         >
-          <Box pt={4} px={9}>
+          <Box className='container-form' pt={4} px={9}>
             <Wrap className='con-flex'>
               <WrapItem className='wrap-one'>
-                <Box>
+                <Box className='box-contact' w={'full'}>
                   <Heading>Contact</Heading>
                   <Text mt={{ sm: 3, md: 3, lg: 5 }} color="#FFF">
                     Fill up the form below to contact
@@ -74,7 +72,7 @@ export const Contact = () => {
                     spacing={5}
                     px={5}
                     alignItems="flex-start">
-                    <a href='https://github.com/SebastianHinestroza12' target='_blank'>
+                    <Link href='https://github.com/SebastianHinestroza12' target='_blank'>
                       <IconButton
                         href="https://www.facebook.com/tu-perfil"
                         aria-label="github"
@@ -83,8 +81,8 @@ export const Contact = () => {
                         _hover={{ bg: 'purple' }}
                         icon={<BsGithub size="28px" />}
                       />
-                    </a>
-                    <a href='https://www.linkedin.com/in/sebastian-mena12/' target='_blank'>
+                    </Link>
+                    <Link href='https://www.linkedin.com/in/sebastian-mena12/' target='_blank'>
                       <IconButton
                         aria-label="Linkedin"
                         size="lg"
@@ -92,7 +90,16 @@ export const Contact = () => {
                         _hover={{ bg: '#0D74FF' }}
                         icon={<BsLinkedin size="28px" />}
                       />
-                    </a>
+                    </Link>
+                    <Link href='https://api.whatsapp.com/send?phone=573232883290&text=Hola%20Sebastian,%20me%20intereso%20tu%20perfil.' target='_blank'>
+                      <IconButton
+                        aria-label="Linkedin"
+                        size="lg"
+                        isRound={true}
+                        _hover={{ bg: '#44C052' }}
+                        icon={<BsWhatsapp size="28px" />}
+                      />
+                    </Link>
                   </HStack>
                 </Box>
               </WrapItem>
@@ -132,7 +139,7 @@ export const Contact = () => {
                           />
                         </FormControl>
                         <FormControl id="submit" float="right">
-                          <Button type="submit" variant="solid" bg="#FFA500" color="white" _hover={{}}>
+                          <Button className='button-form' type="submit" variant="solid" bg="#FFA500" color="#000" _hover={{}}>
                             Send Message
                           </Button>
                         </FormControl>

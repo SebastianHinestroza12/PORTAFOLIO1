@@ -3,3 +3,21 @@
   color: white;
   border-top: 1px solid white;
 }
+
+/* MOBILE */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .container-footer{
+    margin-top: 2rem;
+    
+  }
+  .footer-mobile{
+    display: flex;
+    padding: 0 !important;
+    flex-direction: row !important;
+  }
+
+  .text-footer{
+    text-align: center;
+  }
+}

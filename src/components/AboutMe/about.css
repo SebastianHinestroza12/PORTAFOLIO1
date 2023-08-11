@@ -28,3 +28,42 @@
   color: rgba(255, 255, 255, 0.719);
   text-align: justify;
 }
+
+/* TABLET */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .container-about{
+    height: 29.99rem;
+  }
+  .profile{
+    width: 38%;
+}
+}
+
+/* MOBILE */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .container-about{
+    height: 60.99rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile{
+    width: 100%;
+  }
+  .about{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: orange; */
+  }
+
+}
+@media (width: 320px){
+  .container-about{
+    height: 63.99rem;
+  }
+}

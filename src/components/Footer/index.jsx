@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, chakra, Container, Stack, Text, useColorModeValue, VisuallyHidden, } from '@chakra-ui/react'
-import { FaInstagram, FaLinkedin, FaFacebook } from 'react-icons/fa'
+import { FaInstagram, FaFacebook } from 'react-icons/fa'
 import { Logo} from '../Logo'
 import './footer.css'
 
@@ -34,16 +34,16 @@ export const Footer = ()=> {
     <Box
       className='container-footer'>
       <Container
+        className='footer-mobile'
         as={Stack}
-        maxW={'6xl'}
-        py={4}
+        maxW={'full'}
+        py={2}
         direction={{ base: 'column', md: 'row' }}
-        spacing={4}
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}>
         <Logo />
-        <Text>© 2023 Sebastian Mena. All rights reserved</Text>
-        <Stack direction={'row'} spacing={6}>
+        <Text className='text-footer'>© 2023 Sebastian Mena. All rights reserved</Text>
+        <Stack className='social-footer' direction={'row'}>
           <SocialButton label={'Facebook'} href={'https://www.facebook.com/sebastian.menahinestrosa/'}>
             <FaFacebook />
           </SocialButton>

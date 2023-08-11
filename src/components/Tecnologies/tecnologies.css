@@ -64,3 +64,21 @@
   align-items: center;
   /* background-color: brown; */
 }
+
+/* MOBILE */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .container-tecno{
+    padding: 23.5px;
+  }
+
+  .gradient-tecno{
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (width: 320px){
+  .container-tecno{
+    padding: 5px;
+  }
+}

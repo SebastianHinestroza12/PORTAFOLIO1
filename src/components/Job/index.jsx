@@ -14,8 +14,9 @@ export const Job = () => {
       <p>Full Stack Developer</p>
       <Button
         variant={"solid"}
-        bgGradient={"linear(to-tr, #C21500, #FFC500)"}
+        bg={'#FFA500'}
         size={"md"}
+        color={'#000'}
         onClick={handleDownload}
       >
         Descargar CV

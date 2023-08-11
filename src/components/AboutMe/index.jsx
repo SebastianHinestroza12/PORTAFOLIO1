@@ -2,6 +2,7 @@ import React from 'react'
 import './about.css'
 import { Profile } from '../Profile'
 import { Button } from "@chakra-ui/react";
+import { Link } from '@chakra-ui/react'
 
 export const AboutMe = () => {
   return (
@@ -15,15 +16,16 @@ export const AboutMe = () => {
           Mi lema es estar siempre POSITIVO sin importar las adversidades que la vida ponga en el camino💪🏿🙌🏿.
           Soy una persona proactiva, excelente compañero de equipo, organizado y responsable. Disfruto mucho aprender cosas nuevas, por lo que mi objetivo es un puesto desafiante y dinámico donde pueda adquirir nuevos conocimientos, desarrolar mis habilidades y adquirir experiencia laboral.
         </p>
-        <a href='https://api.whatsapp.com/send?phone=573232883290&text=Hola%20Sebastian,%20me%20intereso%20tu%20perfil.' target='_blank'>
+        <Link href='https://api.whatsapp.com/send?phone=573232883290&text=Hola%20Sebastian,%20me%20intereso%20tu%20perfil.' target='_blank'>
           <Button
             variant={"solid"}
-            bgGradient={"linear(to-tr, #C21500, #FFC500)"}
+            bg={'#FFA500'}
             size={"md"}
+            color={'#000'}
           >
             Contactarme
           </Button>
-        </a>
+        </Link>
       </div>
     </section>
   )

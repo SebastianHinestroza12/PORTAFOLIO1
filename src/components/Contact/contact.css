@@ -25,3 +25,35 @@
   justify-content: right;
   /* background-color: blueviolet; */
 }
+
+/* MOBILE */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .contact{
+    margin-top: 5rem;
+  }
+  .container-flex{
+    padding: 2.5rem 0 0 0;
+  }
+  .container-form{
+    padding: 0 !important;
+  }
+  .box-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .button-form{
+    width: 100%;
+  }
+}
+
+/* monitores ultrawide */
+
+@media (min-width: 2560px) {
+  .container-flex{
+    padding: 1.5rem 32rem 0 32rem;
+  }
+}

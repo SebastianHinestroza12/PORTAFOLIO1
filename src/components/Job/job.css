@@ -17,8 +17,21 @@
 }
 
 span{
-  background: linear-gradient(45deg, #C21500, #FFC500);
+  /* background: linear-gradient(45deg, #FFA500, #FFF); */
   -webkit-background-clip: text;
   background-clip: text;
-  color: transparent; 
+  color: #FFA500; 
+}
+
+/* MOBILE */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .container-section{
+    margin: 2rem 0;
+    height: 15rem;
+    justify-content: start;
+  }
+  .container-section p:nth-child(2){
+    font-size: 35px;
+  }
 }

@@ -26,7 +26,7 @@ function App() {
           image={'https://res.cloudinary.com/dafsjo7al/image/upload/v1691604917/ecommerce_bunmxh.png'}
           description={'¡Descubre la emoción del Mundial de Qatar 2022 a través de nuestro eCommerce colaborativo! Te presentamos una selección excepcional de productos temáticos del torneo, cuidadosamente elegidos y diseñados por nuestro apasionado equipo de ocho aficionados al fútbol. Desde camisetas oficiales hasta artículos coleccionables, te invitamos a explorar y ser parte de esta experiencia única que celebra la pasión y la magia del fútbol en Qatar 2022. ¡Únete a nosotros en este emocionante viaje futbolístico y encuentra productos que harán que vivas el Mundial al máximo!'}
           alt={'Projects1'}
-          href={'https://eccomercepf.vercel.app'}
+          href={'https://eccomerceqatareshop.vercel.app/'}
         /> 
         <Projects
           numberProject={2}
@@ -82,8 +82,10 @@ function App() {
         <p className='tecnologie-text'>Tecnologíes</p>
         <div className='container-tecnologies'>
           <Tecnologies tecnologies={frontendData} title={'frontend'}/>
-          <Tecnologies tecnologies={backendData} title={'backend'}/>
-          <Tecnologies tecnologies={toolData} title={'tools'}/>
+          <Tecnologies tecnologies={backendData} title={'backend'} />
+          <div className='responsive-tablet'>
+            <Tecnologies tecnologies={toolData} title={'tools'} />
+          </div>
         </div>
       </div>
       <div id='contact'>

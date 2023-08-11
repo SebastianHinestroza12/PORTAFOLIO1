@@ -1,8 +1,8 @@
 import React from "react";
 import {Logo} from '../Logo'
-import { Box, Flex, HStack, IconButton, Button, useDisclosure, Stack, } from "@chakra-ui/react";
+import { Box, Flex, HStack, IconButton, Button, useDisclosure, Stack, Link } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-
+import './navbar.css'
 
 
 const linkNames = ["Home", "About Me", "Projects", "Services", "Technologies"];
@@ -14,6 +14,7 @@ const NavLink = (props) => {
   return (
     <Box
       as="a"
+      className="navbar-link"
       px={2}
       py={1}
       color={'white'}
@@ -36,7 +37,7 @@ export const Navbar = ()=> {
 
   return (
     <>
-      <Box py={2}>
+      <Box py={2} >
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <IconButton
             size={"md"}
@@ -51,10 +52,10 @@ export const Navbar = ()=> {
             </Box>
           </Flex>
 
-          <HStack spacing={8} alignItems={"center"}>
+          <HStack className="navigation" alignItems={"center"}>
             <HStack
               as={"nav"}
-              spacing={10}
+              spacing={4}
               display={{ base: "none", md: "flex" }}
             >
               {linkNames.map((name, index) => (
@@ -65,22 +66,21 @@ export const Navbar = ()=> {
             </HStack>
           </HStack>
           <Flex alignItems={"center"}>
-            <Button
-              variant={"solid"}
-              bgGradient={"linear(to-tr, #C21500, #FFC500)"}
-              size={"md"}
-              onClick={() => {
-                window.location.href = "#contact";
-              }}
-
-            >
-              Contact
-            </Button>
+            <Link href="#contact">
+              <Button
+                variant={"solid"}
+                bg={'#FFA500'}
+                size={"md"}
+                color={'#000'}
+              >
+                Contact
+              </Button>
+            </Link>
           </Flex>
         </Flex>
 
         {isOpen ? (
-          <Box pb={4} display={{ md: "none" }}>
+          <Box>
             <Stack as={"nav"} spacing={4}>
               {linkNames.map((name, index) => (
                 <NavLink key={name} target={linkTargets[index]}>

@@ -1,8 +1,8 @@
 import { Avatar, Box, Flex, keyframes } from '@chakra-ui/react'
-
+import './profile.css'
 export const Profile = ()=> {
   const size = 250
-  const color = 'orange'
+  const color = '#FFA500'
 
   const pulseRing = keyframes`
 	0% {
@@ -23,9 +23,10 @@ export const Profile = ()=> {
       alignItems="center"
       h="full"
       w="full"
-      overflow="hidden">
+    >
       <Box
         as="div"
+        className='profile-image'
         position="relative"
         w={size}
         h={size}
