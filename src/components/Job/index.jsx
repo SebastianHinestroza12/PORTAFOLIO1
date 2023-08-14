@@ -3,17 +3,15 @@ import './job.css'
 import { Button } from "@chakra-ui/react";
 
 export const Job = () => {
-  const handleDownload = () => {
-    const pdfFileName = 'CV-SEBASTIAN-MENA';
-    const pdfFilePath = '/src/assets/PDF/CV-SEBASTIAN-MENA.pdf';
+  const pdfFileName = 'CV-SEBASTIAN-MENA.pdf';
+  const pdfFilePath = '/src/assets/PDF/CV-SEBASTIAN-MENA.pdf';
 
+  const handleDownload = () => {
     const link = document.createElement('a');
     link.href = pdfFilePath;
     link.target = '_blank';
     link.download = pdfFileName;
     link.click();
-
-    document.body.removeChild(link);
   };
 
   return (
