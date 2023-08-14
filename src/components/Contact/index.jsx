@@ -27,10 +27,7 @@ export const Contact = () => {
               <Wrap className='con-flex'>
                 <WrapItem className='wrap-one'>
                   <Box className='box-contact' w={'full'}>
-                    <Heading>Contacto</Heading>
-                    <Text mt={{ sm: 3, md: 3, lg: 5 }} color="#FFF">
-                      Rellene el siguiente formulario para contactar
-                    </Text>
+                  <Heading>Contacto</Heading>
                     <Box py={{ base: 5, sm: 5, md: 8, lg: 8 }}>
                       <VStack pl={0} spacing={3} alignItems="flex-start">
                         <Button

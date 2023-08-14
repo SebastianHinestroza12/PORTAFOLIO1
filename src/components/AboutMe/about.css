@@ -4,6 +4,9 @@
   margin-bottom: 12rem;
 }
 .profile{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   /* background-color: blue; */
   width: 25%;
 }
@@ -48,10 +51,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: blue;
+    /* background-color: blue; */
   }
   .profile{
     width: 100%;
+    justify-content: center;
+    /* background-color: aqua; */
   }
   .about{
     margin-top: 2rem;

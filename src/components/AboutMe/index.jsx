@@ -3,21 +3,23 @@ import './about.css'
 import { Profile } from '../Profile'
 import { Button } from "@chakra-ui/react";
 import { Link } from '@chakra-ui/react'
-import Zoom from 'react-reveal/Zoom';
+import { Zoom } from "react-awesome-reveal";
 
 export const AboutMe = () => {
   return (
     <section className='container-about' id='about'>
       <div className='profile'>
-        <Profile/>
+        <Zoom triggerOnce duration={1500}>
+          <Profile />
+        </Zoom>
       </div>
+
       <div className='about'>
         <p>Sobre mi</p>
-        <Zoom>
+
           <p>
             Apasionado de la programación y la tecnología, siempre en busca de desafíos. Encuentro motivación en explorar el vasto mundo tecnológico y aprender algo nuevo cada día para mi desarrollo. En mi tiempo libre, compito en línea en el ajedrez ♟️ y me ejercito en el gimnasio 🏋🏿. El fútbol ❤️⚽ también es una forma de desconexión. Mi lema: mantener la positividad ante cualquier obstáculo 💪🏿🙌🏿. Soy proactivo, organizado y busco un puesto que me desafíe, permitiéndome aprender, crecer y acumular experiencia.
-          </p>
-        </Zoom>
+        </p>
         <Link href='https://api.whatsapp.com/send?phone=573232883290&text=Hola%20Sebastian,%20me%20intereso%20tu%20perfil.' target='_blank'>
           <Button
             variant={"solid"}
@@ -30,5 +32,6 @@ export const AboutMe = () => {
         </Link>
       </div>
     </section>
+
   )
 }

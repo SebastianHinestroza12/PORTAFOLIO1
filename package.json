@@ -15,13 +15,12 @@
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "bootstrap": "^5.3.1",
-    "file-saver": "^2.0.5",
     "framer-motion": "^10.15.0",
     "react": "^18.2.0",
+    "react-awesome-reveal": "^4.2.5",
     "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.10.1",
-    "react-reveal": "^1.2.2"
+    "react-icons": "^4.10.1"
   },
   "devDependencies": {
     "@iconify/react": "^4.1.1",

@@ -7,7 +7,7 @@ import { Services } from './components/Services';
 import { Tecnologies } from './components/Tecnologies'
 import {backendData, frontendData, toolData } from './components/Tecnologies/data'
 import { Contact } from './components/Contact';
-import Zoom from 'react-reveal/Zoom';
+
 
 function App() {
   return (

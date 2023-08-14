@@ -1,11 +1,12 @@
 import React from 'react'
 import './services.css'
 import { Icon } from '@iconify/react';
-import Zoom from 'react-reveal/Zoom';
+import { Zoom } from "react-awesome-reveal";
+
 
 export const Services = ({ nameIcon,title, description }) => {
   return (
-    <Zoom>
+    <Zoom triggerOnce duration={2500}>
       <div className='prueba'>
         <div className='container-gradient'>
           <div className='section-service'>

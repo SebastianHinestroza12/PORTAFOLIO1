@@ -1,17 +1,17 @@
 import React from 'react'
 import './projects.css'
-import { saveAs } from 'file-saver';
 import { Link } from '@chakra-ui/react'
-import Zoom from 'react-reveal/Zoom';
+import { Zoom } from "react-awesome-reveal";
 
 
 export const Projects = ({ numberProject, title, description, image, alt, invertContent, apkUrl, href }) => {
   const handleImageClick = () => {
-    saveAs('/src/assets/APK/app-release.apk', 'movie-app.apk');
+    const filePath = '/src/assets/APK/mobile-app.apk';
+    window.open(filePath, '_blank');
   };
 
   return (
-    <Zoom>
+    <Zoom triggerOnce duration={2500}>
       <div className={invertContent ? 'container-projects-inviert' : 'container-projects'}>
             <div className='description'>
           <p> projecto  {numberProject}</p>

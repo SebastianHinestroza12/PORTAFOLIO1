@@ -1,12 +1,12 @@
 import React from 'react'
 import './tecnologies.css'
 import { Icon } from '@iconify/react';
-import Zoom from 'react-reveal/Zoom';
+import { Zoom } from "react-awesome-reveal";
+
 
 export const Tecnologies = ({ tecnologies, title }) => {
-  
   return (
-    <Zoom>
+    <Zoom triggerOnce duration={2500}>
       <div className='gradient-tecno'>
         <div className='container-tecno'>
           <div>

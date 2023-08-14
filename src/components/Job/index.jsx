@@ -1,7 +1,6 @@
 import React from 'react'
 import './job.css'
 import { Button } from "@chakra-ui/react";
-import { saveAs } from 'file-saver';
 
 export const Job = () => {
   const handleDownload = () => {

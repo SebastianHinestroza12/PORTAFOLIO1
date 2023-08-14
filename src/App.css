@@ -33,9 +33,10 @@
   grid-template-columns: repeat(2, 1fr);
   width: 60%;
   margin: 3rem auto 0 auto;
-  grid-gap: 4.375rem 17.75rem;
+  grid-gap: 4.375rem 2rem;
   justify-items: center;
   align-items: center;
+  /* background-color: aqua; */
 }
 
 .container-tecnologies{
