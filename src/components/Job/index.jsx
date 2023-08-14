@@ -5,7 +5,8 @@ import { saveAs } from 'file-saver';
 
 export const Job = () => {
   const handleDownload = () => {
-    saveAs('/src/assets/PDF/CV_SEBASTIAN-MENA (1).pdf', 'CV_SEBASTIAN-MENA');
+    const filePath = '/src/assets/PDF/CV_SEBASTIAN-MENA (1).pdf';
+    window.open(filePath, '_blank');
   };
 
   return (
