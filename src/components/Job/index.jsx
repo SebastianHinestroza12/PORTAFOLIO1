@@ -4,7 +4,7 @@ import { Button } from "@chakra-ui/react";
 
 export const Job = () => {
   const pdfFileName = 'CV-SEBASTIAN-MENA.pdf';
-  const pdfFilePath = '/src/assets/PDF/CV-SEBASTIAN-MENA.pdf';
+  const pdfFilePath = window.location.origin + '/src/assets/PDF/CV-SEBASTIAN-MENA.pdf';
 
   const handleDownload = () => {
     const link = document.createElement('a');
