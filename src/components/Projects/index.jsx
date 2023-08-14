@@ -5,10 +5,18 @@ import { Zoom } from "react-awesome-reveal";
 
 
 export const Projects = ({ numberProject, title, description, image, alt, invertContent, apkUrl, href }) => {
+
   const handleImageClick = () => {
-    const filePath = '/src/assets/APK/mobile-app.apk';
-    window.open(filePath, '_blank');
+    const apkFilePath = '/src/assets/APK/mobile-app.apk';
+    const desiredFileName = 'mobile-app.apk';
+
+    const link = document.createElement('a');
+    link.href = apkFilePath;
+    link.target = '_blank';
+    link.download = desiredFileName;
+    link.click();
   };
+
 
   return (
     <Zoom triggerOnce duration={2500}>
