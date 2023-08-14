@@ -5,8 +5,8 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import './navbar.css'
 
 
-const linkNames = ["Home", "About Me", "Projects", "Services", "Technologies"];
-const linkTargets = ["#home", "#about", "#projects", "#services", "#technologies"];
+const linkNames = ["Sobre Mi", "Proyectos", "Servicios", "Tecnologías"];
+const linkTargets = ["#about", "#projects", "#services", "#technologies"];
 
 
 const NavLink = (props) => {
@@ -74,7 +74,7 @@ export const Navbar = ()=> {
                 size={"md"}
                 color={'#000'}
               >
-                Contact
+                Contacto
               </Button>
             </Link>
           </Flex>

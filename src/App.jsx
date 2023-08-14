@@ -7,6 +7,7 @@ import { Services } from './components/Services';
 import { Tecnologies } from './components/Tecnologies'
 import {backendData, frontendData, toolData } from './components/Tecnologies/data'
 import { Contact } from './components/Contact';
+import Zoom from 'react-reveal/Zoom';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
       </div>
       <div className='section-margin' id='projects'>
         <div className='projects'>
-          <p>projects</p>
+          <p>proyectos</p>
         </div>
         <Projects
           numberProject={1}
@@ -37,26 +38,37 @@ function App() {
           apkUrl
           invertContent
         />
-        <Projects
+        {/* <Projects
           numberProject={3}
           title={'Dog application'}
           image={'https://res.cloudinary.com/dafsjo7al/image/upload/v1691623708/dog_bhjuoz.png'}
           description={'Explora, personaliza y ordena perros en nuestra app canina. Encuentra la raza perfecta con filtros detallados o crea tu compañero ideal. ¡Lleva la experiencia de tener un perro a tu pantalla!'}
           alt={'Projects3'}
           href={'https://pi-dog-main.vercel.app'}
-        />
+        /> */}
         <Projects
-          numberProject={4}
+          numberProject={3}
           title={'task application'}
           image={'https://res.cloudinary.com/dafsjo7al/image/upload/v1691623708/task2_rmoujm.png'}
           description={'Optimiza tu productividad con nuestra intuitiva aplicación de tareas. Simplifica tu día a día al agregar, completar y eliminar tareas con facilidad. Mantén un control total sobre tus responsabilidades y logra más en menos tiempo.'}
-          alt={'Projects4'}
+          alt={'Projects3'}
           href={'https://aplicationtask.netlify.app'}
-          invertContent
         /> 
       </div>
+      <div className='tecnologies section-margin' id='technologies'>
+        <p className='tecnologie-text'>Tecnologías</p>
+        <div className='container-tecnologies'>
+          <Tecnologies tecnologies={frontendData} title={'frontend'} />
+          <Tecnologies tecnologies={backendData} title={'backend'} />
+          <div className='responsive-tablet'>
+            <Tecnologies tecnologies={toolData} title={'tools'} />
+          </div>
+        </div>
+      </div>
+
+
       <div className='container-services section-margin' id='services'>
-        <p className='title-services'>services</p>
+        <p className='title-services'>servicios</p>
         <div className='services'>
           <Services
             nameIcon={'fa:mobile'}
@@ -78,16 +90,7 @@ function App() {
             nameIcon={'simple-icons:freelancer'} />
         </div>
       </div>
-      <div className='tecnologies section-margin' id='technologies'>
-        <p className='tecnologie-text'>Tecnologíes</p>
-        <div className='container-tecnologies'>
-          <Tecnologies tecnologies={frontendData} title={'frontend'}/>
-          <Tecnologies tecnologies={backendData} title={'backend'} />
-          <div className='responsive-tablet'>
-            <Tecnologies tecnologies={toolData} title={'tools'} />
-          </div>
-        </div>
-      </div>
+
       <div id='contact'>
         <Contact/>
       </div>

@@ -2,6 +2,8 @@ import React from 'react'
 import './projects.css'
 import { saveAs } from 'file-saver';
 import { Link } from '@chakra-ui/react'
+import Zoom from 'react-reveal/Zoom';
+
 
 export const Projects = ({ numberProject, title, description, image, alt, invertContent, apkUrl, href }) => {
   const handleImageClick = () => {
@@ -9,10 +11,10 @@ export const Projects = ({ numberProject, title, description, image, alt, invert
   };
 
   return (
-    <>
+    <Zoom>
       <div className={invertContent ? 'container-projects-inviert' : 'container-projects'}>
             <div className='description'>
-              <p> project  {numberProject}</p>
+          <p> projecto  {numberProject}</p>
               <p>{title}</p>
               <p>{description}</p>
             </div>
@@ -29,7 +31,7 @@ export const Projects = ({ numberProject, title, description, image, alt, invert
               </div>
             </div>
       </div>
-    </>
+    </Zoom>
   )
 }
 

@@ -10,7 +10,7 @@ export const Job = () => {
 
   return (
     <section className='container-section'>
-      <p>Hi, I'm <span>Sebastian Mena</span></p>
+      <p>Hola,  soy <span>Sebastian Mena</span></p>
       <p>Full Stack Developer</p>
       <Button
         variant={"solid"}
