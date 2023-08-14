@@ -44,10 +44,11 @@
 
 @media (min-width: 320px) and (max-width: 480px) {
   .container-about{
-    height: 60.99rem;
+    height: 49rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: blue;
   }
   .profile{
     width: 100%;
@@ -62,8 +63,4 @@
   }
 
 }
-@media (width: 320px){
-  .container-about{
-    height: 63.99rem;
-  }
-}
+

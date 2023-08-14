@@ -4,14 +4,12 @@ import { MdPhone, MdEmail, MdLocationOn, MdOutlineEmail } from 'react-icons/md'
 import { BsGithub, BsPerson, BsLinkedin, BsWhatsapp } from 'react-icons/bs'
 import { Footer } from '../Footer';
 import './contact.css'
-import Zoom from 'react-reveal/Zoom';
+
 
 export const Contact = () => {
   const gradient = 'linear-gradient(to bottom, #000C40, #607D8B)';
 
   return (
-    <Zoom>
-
       <Container
         className='contact'
         bgGradient={gradient}
@@ -156,7 +154,6 @@ export const Contact = () => {
             </Box>
           </Box>
         </Flex>
-      </Container>
-    </Zoom>
+    </Container>
   )
 }

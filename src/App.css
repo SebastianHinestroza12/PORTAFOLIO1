@@ -69,6 +69,10 @@
   .responsive-tablet{
     margin-top: 3rem;
   }
+
+  .container-services{
+    margin-top: 7rem;
+  }
 }
 
 /* MOBILE */
@@ -84,6 +88,9 @@
     flex-direction: column;
     margin: 3rem auto 0 auto;
     grid-gap: 2rem 17.75rem;
+  }
+  .container-services{
+    margin-top: 4rem;
   }
   .tecnologies{
     /* background-color: aqua; */

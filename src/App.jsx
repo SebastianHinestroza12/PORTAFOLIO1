@@ -12,7 +12,7 @@ import Zoom from 'react-reveal/Zoom';
 function App() {
   return (
     <>
-      <div className='section-margin'>
+      <div className='section-margin container-main'>
         <Navbar />
         <Job />
         <AboutMe />
