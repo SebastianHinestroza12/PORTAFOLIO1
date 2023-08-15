@@ -1,7 +1,7 @@
 import React from 'react'
 import './job.css'
 import { Button } from "@chakra-ui/react";
-import pdf from './CV-SEBASTIAN-MENA.pdf'
+import pdf from './CV_SEBASTIAN-MENA.pdf'
 
 export const Job = () => {
   return (
