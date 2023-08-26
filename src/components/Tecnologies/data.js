@@ -1,5 +1,6 @@
 const frontendData = [
   {  name: 'React', icon: 'logos:react' },
+  { name: 'Next js', icon: 'logos:nextjs-icon' },
   { name: 'javascript', icon: 'logos:javascript' },
   { name: 'html', icon: 'vscode-icons:file-type-html' },
   { name: 'typescript', icon: 'devicon:typescript' },
