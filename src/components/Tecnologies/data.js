@@ -29,7 +29,7 @@ const toolData = [
   { name: 'visual code', icon: 'logos:visual-studio-code' },
   { name: 'jira', icon: 'logos:jira' },
   { name: 'bootstrap', icon: 'logos:bootstrap' },
-  { name: 'android studio', icon: 'devicon:androidstudio' },
+  // { name: 'android studio', icon: 'devicon:androidstudio' },
   { name: 'virtual box', icon: 'simple-icons:virtualbox' },
 ];
 

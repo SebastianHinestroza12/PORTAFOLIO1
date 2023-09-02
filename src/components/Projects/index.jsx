@@ -22,7 +22,7 @@ export const Projects = ({ numberProject, title, description, image, alt, invert
     <Zoom triggerOnce duration={2500}>
       <div className={invertContent ? 'container-projects-inviert' : 'container-projects'}>
             <div className='description'>
-          <p> projecto  {numberProject}</p>
+          <p> proyecto  {numberProject}</p>
               <p>{title}</p>
               <p>{description}</p>
             </div>
