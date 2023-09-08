@@ -6,7 +6,7 @@ import { Zoom } from "react-awesome-reveal";
 
 export const Tecnologies = ({ tecnologies, title }) => {
   return (
-    <Zoom triggerOnce duration={2500}>
+
       <div className='gradient-tecno'>
         <div className='container-tecno'>
           <div>
@@ -14,17 +14,18 @@ export const Tecnologies = ({ tecnologies, title }) => {
           </div>
           <div className='tecno'>
             {tecnologies.map((tech, index) => (
-              <div className='icon-tecno' key={index}>
-                <div className='imagen-tecno'>
-                  <Icon icon={tech.icon} width={40} />
+              <Zoom triggerOnce duration={2500}>
+                <div className='icon-tecno' key={index}>
+                  <div className='imagen-tecno'>
+                    <Icon icon={tech.icon} width={40} />
+                  </div>
+                  <p className='tecno-text'>{tech.name}</p>
                 </div>
-                <p className='tecno-text'>{tech.name}</p>
-              </div>
+
+              </Zoom>
             ))}
           </div>
         </div>
-      </div>
-
-    </Zoom>
+    </div>
   )
 }
