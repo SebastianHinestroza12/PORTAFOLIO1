@@ -3,7 +3,7 @@ import { Navbar } from './components/Navbar';
 import { Job } from './components/Job';
 import { AboutMe } from './components/AboutMe';
 import { Projects } from './components/Projects';
-import { Services } from './components/Services';
+// import { Services } from './components/Services';
 import { Tecnologies } from './components/Tecnologies'
 import {backendData, frontendData, toolData } from './components/Tecnologies/data'
 import { Contact } from './components/Contact';
@@ -66,7 +66,7 @@ function App() {
         </div>
       </div>
 
-
+      {/*
       <div className='container-services section-margin' id='services'>
         <p className='title-services'>servicios</p>
         <div className='services'>
@@ -89,7 +89,7 @@ function App() {
             description={'Estoy disponible para trabajar como freelancer en proyectos de desarrollo web y software. Si tienes una pequeña tarea o un proyecto que necesita atención, puedo ayudarte a abordarla de manera efectiva. Mi enfoque es aprender y crecer a través de cada proyecto, por lo que estaré comprometido en brindarte soluciones asequibles y de calidad.'}
             nameIcon={'simple-icons:freelancer'} />
         </div>
-      </div>
+      </div> */}
 
       <div id='contact'>
         <Contact/>

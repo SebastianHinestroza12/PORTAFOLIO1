@@ -5,8 +5,8 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import './navbar.css'
 
 
-const linkNames = ["Sobre Mi", "Proyectos", "Servicios", "Tecnologías"];
-const linkTargets = ["#about", "#projects", "#services", "#technologies"];
+const linkNames = ["Sobre Mi", "Proyectos", "Tecnologías"];
+const linkTargets = ["#about", "#projects", "#technologies"];
 
 
 const NavLink = (props) => {
