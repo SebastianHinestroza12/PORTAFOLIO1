@@ -2,6 +2,8 @@ import React from 'react'
 import './projects.css'
 import { Link } from '@chakra-ui/react'
 import { Zoom } from "react-awesome-reveal";
+import 'atropos/css'
+import Atropos from 'atropos/react';
 
 
 export const Projects = ({ numberProject, title, description, image, alt, invertContent, apkUrl, href }) => {
@@ -25,17 +27,21 @@ export const Projects = ({ numberProject, title, description, image, alt, invert
           <p> proyecto  {numberProject}</p>
               <p>{title}</p>
               <p>{description}</p>
-            </div>
-            <div className='container-image-project'>
-              <div className="square-frame">
-            <Link href={href} target='_blank'>
-              <img
-                className="framed-image"
-                src={image}
-                alt={alt}
-                onClick={apkUrl ? handleImageClick : null} 
-                  />
-            </Link>
+        </div>
+
+        <div className='container-image-project'>
+          <div className="square-frame">
+            <Atropos shadow={false}>
+              <Link href={href} target='_blank'>
+                <img
+                  className="framed-image"
+                  src={image}
+                  alt={alt}
+                  onClick={apkUrl ? handleImageClick : null}
+                />
+              </Link>
+
+            </Atropos>
               </div>
             </div>
       </div>
