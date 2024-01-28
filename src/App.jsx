@@ -38,14 +38,6 @@ function App() {
           apkUrl
           invertContent
         />
-        {/* <Projects
-          numberProject={3}
-          title={'Dog application'}
-          image={'https://res.cloudinary.com/dafsjo7al/image/upload/v1691623708/dog_bhjuoz.png'}
-          description={'Explora, personaliza y ordena perros en nuestra app canina. Encuentra la raza perfecta con filtros detallados o crea tu compañero ideal. ¡Lleva la experiencia de tener un perro a tu pantalla!'}
-          alt={'Projects3'}
-          href={'https://pi-dog-main.vercel.app'}
-        /> */}
         <Projects
           numberProject={3}
           title={'task application'}
@@ -58,8 +50,8 @@ function App() {
       <div className='tecnologies section-margin' id='technologies'>
         <p className='tecnologie-text'>Tecnologías</p>
         <div className='container-tecnologies'>
-          <Tecnologies tecnologies={frontendData} title={'frontend'} />
           <Tecnologies tecnologies={backendData} title={'backend'} />
+          <Tecnologies tecnologies={frontendData} title={'frontend'} />
           <div className='responsive-tablet'>
             <Tecnologies tecnologies={toolData} title={'tools'} />
           </div>

@@ -7,7 +7,7 @@ export const Job = () => {
   return (
     <section className='container-section'>
       <p>Hola,  soy <span>Sebastian Mena</span></p>
-      <p>Full Stack Developer</p>
+      <p>Backend Developer</p>
       <a download href={pdf}>
         <Button
           variant={"solid"}
