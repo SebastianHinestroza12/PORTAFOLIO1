@@ -3,7 +3,6 @@ import { Navbar } from './components/Navbar';
 import { Job } from './components/Job';
 import { AboutMe } from './components/AboutMe';
 import { Projects } from './components/Projects';
-// import { Services } from './components/Services';
 import { Tecnologies } from './components/Tecnologies'
 import {backendData, frontendData, toolData } from './components/Tecnologies/data'
 import { Contact } from './components/Contact';
@@ -51,37 +50,10 @@ function App() {
         <p className='tecnologie-text'>Tecnologías</p>
         <div className='container-tecnologies'>
           <Tecnologies tecnologies={backendData} title={'backend'} />
+          <Tecnologies tecnologies={toolData} title={'tools'} />
           <Tecnologies tecnologies={frontendData} title={'frontend'} />
-          <div className='responsive-tablet'>
-            <Tecnologies tecnologies={toolData} title={'tools'} />
-          </div>
         </div>
       </div>
-
-      {/*
-      <div className='container-services section-margin' id='services'>
-        <p className='title-services'>servicios</p>
-        <div className='services'>
-          <Services
-            nameIcon={'fa:mobile'}
-            title={'mobile app development'}
-            description={'Ofrezco servicios de desarrollo móvil para crear aplicaciones simples y funcionales en plataformas iOS y Android. Si tienes una idea para una aplicación o necesitas una presencia móvil básica para tu negocio, estoy aquí para ayudarte. Trabajaré contigo para crear una aplicación que cumpla con tus requisitos y sea fácil de usar para tus usuarios.'}
-          />
-          <Services
-            nameIcon={'ion:desktop-outline'}
-            title={'desktop app development'}
-            description={'Mi enfoque en el desarrollo de aplicaciones de escritorio se centra en crear herramientas útiles y sencillas para mejorar la eficiencia de tu negocio. Si tienes una idea para una aplicación de escritorio que podría ayudarte a administrar datos o automatizar tareas, estaré encantado de colaborar contigo en su desarrollo. Juntos, podemos hacer realidad tu proyecto y crear una aplicación funcional.'}
-          />
-          <Services
-            description={'Ofrezco servicios de programación en varios lenguajes y tecnologías. Si tienes un problema específico que resolver o una idea que te gustaría explorar, puedo trabajar contigo para crear pequeñas aplicaciones o scripts. Aunque mi experiencia no es muy amplia, estoy dispuesto a esforzarme y aprender para proporcionarte soluciones simples y funcionales.'}
-            title={'programming languages'}
-            nameIcon={'streamline:programming-script-code-code-angle-programming-file-bracket'} />
-          <Services
-            title={'freelancer'}
-            description={'Estoy disponible para trabajar como freelancer en proyectos de desarrollo web y software. Si tienes una pequeña tarea o un proyecto que necesita atención, puedo ayudarte a abordarla de manera efectiva. Mi enfoque es aprender y crecer a través de cada proyecto, por lo que estaré comprometido en brindarte soluciones asequibles y de calidad.'}
-            nameIcon={'simple-icons:freelancer'} />
-        </div>
-      </div> */}
 
       <div id='contact'>
         <Contact/>

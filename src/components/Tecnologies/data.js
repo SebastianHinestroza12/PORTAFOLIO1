@@ -1,12 +1,11 @@
 const frontendData = [
-  { name: "javascript", icon: "logos:javascript" },
   { name: "typescript", icon: "devicon:typescript" },
-  { name: "jquery", icon: "devicon:jquery" },
+  { name: "javascript", icon: "logos:javascript" },
   { name: "React", icon: "logos:react" },
   { name: "Next js", icon: "logos:nextjs-icon" },
+  { name: "react native", icon: "skill-icons:react-dark" },
   { name: "html", icon: "vscode-icons:file-type-html" },
   { name: "css", icon: "vscode-icons:file-type-css" },
-  { name: "react native", icon: "skill-icons:react-dark" },
 ];
 
 const backendData = [
@@ -20,14 +19,13 @@ const backendData = [
 ];
 
 const toolData = [
+  { name: "docker", icon: "skill-icons:docker" },
+  { name: "jest", icon: "vscode-icons:file-type-jest" },
   { name: "git", icon: "devicon:git" },
   { name: "github", icon: "devicon:github" },
-  { name: "figma", icon: "devicon:figma" },
   { name: "postman", icon: "devicon:postman" },
-  { name: "visual code", icon: "logos:visual-studio-code" },
   { name: "jira", icon: "logos:jira" },
-  { name: "bootstrap", icon: "logos:bootstrap" },
-  { name: "virtual box", icon: "simple-icons:virtualbox" },
+  { name: "figma", icon: "devicon:figma" }
 ];
 
 export { frontendData, toolData, backendData };
