@@ -4,9 +4,9 @@ export const data = [
     { name: "express", icon: "skill-icons:expressjs-dark" },
     { name: "laravel", icon: "logos:laravel" },
     { name: "php", icon: "logos:php" },
-    { name: "postgresql", icon: "logos:postgresql" },
     { name: "mongo db", icon: "vscode-icons:file-type-mongo" },
     { name: "mysql", icon: "devicon:mysql" },
+    { name: "postgresql", icon: "logos:postgresql" }
   ],
 
   [

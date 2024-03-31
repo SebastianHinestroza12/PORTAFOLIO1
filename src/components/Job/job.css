@@ -11,7 +11,7 @@
   font-size: 25px;
   color: #FFF;
 }
-.container-section p:nth-child(2){
+.job-title p{
   font-size: 50px;
   color: #FFF;
 }

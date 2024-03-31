@@ -6,6 +6,7 @@ import { Projects } from './components/Projects';
 import { Tecnologies } from './components/Tecnologies'
 import { data, title } from './components/Tecnologies/data'
 import { Contact } from './components/Contact';
+import { Experience } from './components/Experience';
 
 
 function App() {
@@ -16,6 +17,11 @@ function App() {
         <Job />
         <AboutMe />
       </div>
+
+      <div className='section-margin'>
+        <Experience />
+      </div>
+
       <div className='section-margin' id='projects'>
         <div className='projects'>
           <p>proyectos</p>
@@ -57,11 +63,6 @@ function App() {
         </div>
       </div>
 
-      <div>
-        <h1 className="text-3xl font-bold underline ml-5">
-          Hello world!
-        </h1>
-      </div>
       <div id='contact'>
         <Contact/>
       </div>

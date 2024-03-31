@@ -11,14 +11,14 @@ export const ExperienceItem = ({ title, company, description, link, date }) => {
             &bull;
           </span>
           <h3 className="text-xl font-bold text-yellow-400">{title}</h3>
-          <h4 className="font-semibold text-xl text-gray-600 dark:text-white">{company}</h4>
-          <time className="p-0 m-0 text-sm text-gray-600/80 dark:text-white/80">{date}</time>
+          <h4 className="font-semibold text-xl text-white">{company}</h4>
+          <time className="p-0 m-0 text-sm text-gray-600">{date}</time>
         </div>
       </div>
-      <div className="relative flex flex-col gap-2 pb-4 text-gray-600 dark:text-gray-300 md:col-span-3">
+      <div className="relative flex flex-col gap-2 pb-4 text-white md:col-span-3">
         <p>{description}</p>
         {link && (
-          <a href={link} className="text-blue-500 hover:underline">
+          <a href={link} className="text-yellow-400 hover:underline">
             Read More
           </a>
         )}
