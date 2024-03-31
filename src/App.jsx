@@ -7,6 +7,7 @@ import { Tecnologies } from './components/Tecnologies'
 import { data, title } from './components/Tecnologies/data'
 import { Contact } from './components/Contact';
 import { Experience } from './components/Experience';
+import { Project } from './components/Project';
 
 
 function App() {
@@ -18,8 +19,12 @@ function App() {
         <AboutMe />
       </div>
 
-      <div className='section-margin'>
+      <div className='section-margin mb-12'>
         <Experience />
+      </div>
+
+      <div className='section-margin'>
+        <Project />
       </div>
 
       <div className='section-margin' id='projects'>

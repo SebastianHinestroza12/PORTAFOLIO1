@@ -1,6 +1,6 @@
 
 .section-margin{
-  margin: 0 5rem;
+  margin: 0 12rem;
 }
 
 .projects{
@@ -36,7 +36,6 @@
   grid-gap: 4.375rem 2rem;
   justify-items: center;
   align-items: center;
-  /* background-color: aqua; */
 }
 
 .container-tecnologies{
