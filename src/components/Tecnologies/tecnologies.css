@@ -1,6 +1,5 @@
 .container-tecno{
   flex: 1;
-  /* background-color: rgb(118, 226, 104); */
   height: 380px;
   padding: 20px;
   position: relative;
@@ -33,7 +32,6 @@
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   align-items: center;
-  /* background-color: blueviolet; */
 }
 
 .icon-tecno{
@@ -43,7 +41,6 @@
   align-items: center;
   width: 90px;
   height: 90px;
-  /* background-color: rgb(25, 184, 184); */
 }
 
 .tecno-text{
@@ -52,7 +49,6 @@
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
-  /* background-color: black; */
   width: 100%;
   text-align: center;
 }
@@ -62,7 +58,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: brown; */
 }
 
 /* MOBILE */

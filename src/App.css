@@ -57,7 +57,7 @@
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .section-margin{
-    margin: 0 2rem;
+    margin: 0 3rem;
   }
   .tecnologies{
     margin-top: 7rem;
@@ -79,7 +79,7 @@
 
 @media (min-width: 320px) and (max-width: 480px) {
   .section-margin{
-    margin: 0 1rem;
+    margin: 0 2rem;
     /* background-color: rgb(88, 52, 3); */
   }
   .services{

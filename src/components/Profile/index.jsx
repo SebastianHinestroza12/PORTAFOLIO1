@@ -1,8 +1,7 @@
 import { Avatar, Box, Flex } from '@chakra-ui/react'
-import './profile.css'
 
 export const Profile = ()=> {
-  const size = 250
+  const size = 220
 
   return (
       <Flex
@@ -12,13 +11,12 @@ export const Profile = ()=> {
         w="full"
       >
         <Box
-          as="div"
-          className='profile-image'
+        as="div"
           position="relative"
           w={size}
           h={size}
         >
-          <Avatar src="https://res.cloudinary.com/dafsjo7al/image/upload/v1691133740/Ellipse_2_2x_fk8uqu.png" size="full" position="absolute" top={0} />
+        <Avatar src="https://res.cloudinary.com/dafsjo7al/image/upload/v1711904110/Ellipse_2_2x_nksiau.png" size="full" position="absolute" top={0} />
         </Box>
     </Flex>
   )

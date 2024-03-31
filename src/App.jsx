@@ -1,4 +1,3 @@
-import './App.css'
 import { Navbar } from './components/Navbar';
 import { Job } from './components/Job';
 import { AboutMe } from './components/AboutMe';
@@ -8,29 +7,30 @@ import { data, title } from './components/Tecnologies/data'
 import { Contact } from './components/Contact';
 import { Experience } from './components/Experience';
 import { Project } from './components/Project';
-
+import { Text, Box } from "@chakra-ui/react";
+import './App.css'
 
 function App() {
   return (
-    <>
-      <div className='section-margin container-main'>
+    <main>
+      <Box className='section-margin'>
         <Navbar />
         <Job />
         <AboutMe />
-      </div>
+      </Box>
 
-      <div className='section-margin mb-12'>
+      <Box className='section-margin'>
         <Experience />
-      </div>
+      </Box>
 
-      <div className='section-margin'>
+      <Box className='section-margin'>
         <Project />
-      </div>
+      </Box>
 
-      <div className='section-margin' id='projects'>
-        <div className='projects'>
-          <p>proyectos</p>
-        </div>
+      <Box className='section-margin' id='projects'>
+        <Box className='projects'>
+          <Text>proyectos</Text>
+        </Box>
         <Projects
           numberProject={1}
           title={'Ecommerce Qatar 2022'}
@@ -56,22 +56,22 @@ function App() {
           alt={'Projects3'}
           href={'https://aplicationtask.netlify.app'}
         /> 
-      </div>
-      <div className='tecnologies section-margin' id='technologies'>
-        <p className='tecnologie-text'>Tecnologías</p>
-        <div className='container-tecnologies'>
+      </Box>
+      <Box className='tecnologies section-margin' id='technologies'>
+        <Text className='tecnologie-text'>Tecnologías</Text>
+        <Box className='container-tecnologies'>
           {
             data.map((tech, index) => (
               <Tecnologies key={index} tecnologies={tech} title={title[index]} />
             ))
           }
-        </div>
-      </div>
+        </Box>
+      </Box>
 
-      <div id='contact'>
+      <Box id='contact'>
         <Contact/>
-      </div>
-    </>
+      </Box>
+    </main>
   )
 }
 

@@ -1,5 +1,6 @@
 import { ExperienceItem } from "../ExperienceItem";
 import { Icon } from "@iconify/react";
+import { Box } from "@chakra-ui/react";
 import { TAGS } from "../../util";
 
 const EXPERIENCIE = [
@@ -35,13 +36,13 @@ const EXPERIENCIE = [
 
 export const Experience = () => {
   return (
-    <div className="experience">
-      <div className="flex">
+    <Box className="my-16" id="experiencia">
+      <Box className="flex">
         <Icon icon="pajamas:work" width={35} color="#FFF" />
         <h2 className="text-white text-2xl font-bold text-center flex items-center ml-4">
           Experiencia Profesional
         </h2>
-      </div>
+      </Box>
       <ol className="relative mt-16">
         {EXPERIENCIE.map((experience, index) => (
           <li key={index}>
@@ -49,6 +50,6 @@ export const Experience = () => {
           </li>
         ))}
       </ol>
-    </div>
+    </Box>
   );
 };

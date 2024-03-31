@@ -1,12 +1,14 @@
 import React from "react";
-import {Logo} from '../Logo'
-import { Box, Flex, HStack, IconButton, Button, useDisclosure, Stack, Link } from "@chakra-ui/react";
+import {
+  Box, Flex, HStack, IconButton, Button, useDisclosure, Stack, Link, Text
+} from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import { Icon } from "@iconify/react";
 import './navbar.css'
 
 
-const linkNames = ["Sobre Mi", "Proyectos", "Tecnologías"];
-const linkTargets = ["#about", "#projects", "#technologies"];
+const linkNames = ["Sobre Mi", "Experiencia", "Proyectos", "Tecnologías"];
+const linkTargets = ["#about", "#experiencia", "#projects", "#technologies"];
 
 
 const NavLink = (props) => {
@@ -17,13 +19,13 @@ const NavLink = (props) => {
       className="navbar-link"
       px={2}
       py={1}
+      transition={'ease-in'}
       color={'white'}
       textTransform={'uppercase'}
-      rounded={"md"}
+      rounded={"3xl"}
       _hover={{
         textDecoration: "none",
-        bg: 'white',
-        color: '#000'
+        bg: '#C21500'
       }}
       href={target}
     >
@@ -32,25 +34,30 @@ const NavLink = (props) => {
   );
 };
 
-export const Navbar = ()=> {
+export const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <>
+    <Box
+      as="header"
+      position="sticky"
+      top={0}
+      zIndex="sticky"
+      boxShadow="md"
+    >
       <Box py={2} >
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <IconButton
+            variant='outline'
             size={"md"}
-            icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
+            icon={isOpen ? <CloseIcon color={'#C21500'} /> : <Icon icon="carbon:menu" width={40} color="#C21500" />}
             aria-label={"Open Menu"}
             display={{ md: "none" }}
-            bg={'#FFF'}
             onClick={isOpen ? onClose : onOpen}
           />
-          <Flex>
-            <Box>
-              <Logo />
-            </Box>
+          <Flex className="container-text-logo">
+            <Text className="text-logo">Mena</Text>
+            <Text className="dev">Dev</Text>
           </Flex>
 
           <HStack className="navigation" alignItems={"center"}>
@@ -70,9 +77,15 @@ export const Navbar = ()=> {
             <Link href="#contact">
               <Button
                 variant={"solid"}
-                bg={'#FFA500'}
+                bg={'#FFC500'}
                 size={"md"}
                 color={'#000'}
+                rounded={"3xl"}
+                _hover={{
+                  textDecoration: "none",
+                  bg: '#C21500',
+                  color: '#FFF'
+                }}
               >
                 Contacto
               </Button>
@@ -92,6 +105,6 @@ export const Navbar = ()=> {
           </Box>
         ) : null}
       </Box>
-    </>
+    </Box>
   );
 }
