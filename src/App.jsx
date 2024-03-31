@@ -4,7 +4,7 @@ import { Job } from './components/Job';
 import { AboutMe } from './components/AboutMe';
 import { Projects } from './components/Projects';
 import { Tecnologies } from './components/Tecnologies'
-import {backendData, frontendData, toolData } from './components/Tecnologies/data'
+import { data, title } from './components/Tecnologies/data'
 import { Contact } from './components/Contact';
 
 
@@ -49,12 +49,19 @@ function App() {
       <div className='tecnologies section-margin' id='technologies'>
         <p className='tecnologie-text'>Tecnologías</p>
         <div className='container-tecnologies'>
-          <Tecnologies tecnologies={backendData} title={'backend'} />
-          <Tecnologies tecnologies={toolData} title={'tools'} />
-          <Tecnologies tecnologies={frontendData} title={'frontend'} />
+          {
+            data.map((tech, index) => (
+              <Tecnologies key={index} tecnologies={tech} title={title[index]} />
+            ))
+          }
         </div>
       </div>
 
+      <div>
+        <h1 className="text-3xl font-bold underline ml-5">
+          Hello world!
+        </h1>
+      </div>
       <div id='contact'>
         <Contact/>
       </div>
