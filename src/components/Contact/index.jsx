@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Flex, Link, Box, Heading, Text, IconButton, Button, VStack, HStack, Wrap, WrapItem, FormControl, FormLabel, Input, InputGroup, InputLeftElement, Textarea, } from '@chakra-ui/react'
+import { Container, Flex, Link, Box, Heading, IconButton, Button, VStack, HStack, Wrap, WrapItem, FormControl, FormLabel, Input, InputGroup, InputLeftElement, Textarea, } from '@chakra-ui/react'
 import { MdPhone, MdEmail, MdLocationOn, MdOutlineEmail } from 'react-icons/md'
 import { BsGithub, BsPerson, BsLinkedin, BsWhatsapp } from 'react-icons/bs'
 import { Footer } from '../Footer';
@@ -7,7 +7,7 @@ import './contact.css'
 
 
 export const Contact = () => {
-  const gradient = 'linear-gradient(to bottom, #000C40, #607D8B)';
+  const gradient = 'linear-gradient(to bottom, #FFA500, #000)';
 
   return (
       <Container
