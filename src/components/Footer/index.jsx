@@ -41,8 +41,12 @@ export const Footer = ()=> {
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}>
         <Flex className="container-text-logo">
-          <Text className="text-logo">Mena</Text>
-          <Text className="dev">Dev</Text>
+          <Text color={'#FFC500'}
+            fontSize={'3xl'}
+            fontFamily={'cursive'}>Mena</Text>
+          <Text color={'#C21500'}
+            fontSize={'3xl'}
+            fontFamily={'cursive'}>Dev</Text>
         </Flex>
         <Text className='text-footer'>© 2023 Sebastian Mena. All rights reserved</Text>
         <Stack className='social-footer' direction={'row'}>

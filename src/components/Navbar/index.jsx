@@ -2,9 +2,8 @@ import React from "react";
 import {
   Box, Flex, HStack, IconButton, Button, useDisclosure, Stack, Link, Text
 } from "@chakra-ui/react";
-import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import { CloseIcon } from "@chakra-ui/icons";
 import { Icon } from "@iconify/react";
-import './navbar.css'
 
 
 const linkNames = ["Sobre Mi", "Experiencia", "Proyectos", "Tecnologías"];
@@ -45,26 +44,58 @@ export const Navbar = () => {
       zIndex="sticky"
       boxShadow="md"
     >
-      <Box py={2} >
-        <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
+      <Box py={2}>
+
+        <Flex h={16}
+          alignItems={"center"}
+          justifyContent={"space-between"}
+          flexDirection={{ base: 'row-reverse', md: 'row' }}>
           <IconButton
-            variant='outline'
+            variant='ghost'
             size={"md"}
             icon={isOpen ? <CloseIcon color={'#C21500'} /> : <Icon icon="carbon:menu" width={40} color="#C21500" />}
             aria-label={"Open Menu"}
             display={{ md: "none" }}
             onClick={isOpen ? onClose : onOpen}
+            _hover={{
+              textDecoration: "none",
+              bg: '#FFC500'
+            }}
           />
-          <Flex className="container-text-logo">
-            <Text className="text-logo">Mena</Text>
-            <Text className="dev">Dev</Text>
+
+          {isOpen ? (
+            <Box bg={'#121212'}>
+              <Stack as={"nav"} spacing={4}>
+                {linkNames.map((name, index) => (
+                  <NavLink key={name} target={linkTargets[index]}>
+                    {name}
+                  </NavLink>
+                ))}
+              </Stack>
+            </Box>
+          ) : null}
+
+          <Flex>
+            <Text
+              color={'#FFC500'}
+              fontSize={'3xl'}
+              fontFamily={'cursive'}
+            >
+              Mena
+            </Text>
+            <Text
+              color={'#C21500'}
+              fontSize={'3xl'}
+              fontFamily={'cursive'}
+            >
+              Dev
+            </Text>
           </Flex>
 
-          <HStack className="navigation" alignItems={"center"}>
+          <HStack display={{ base: "none", md: 'flex' }} alignItems={"center"}>
             <HStack
               as={"nav"}
               spacing={4}
-              display={{ base: "none", md: "flex" }}
             >
               {linkNames.map((name, index) => (
                 <NavLink key={name} target={linkTargets[index]}>
@@ -73,7 +104,7 @@ export const Navbar = () => {
               ))}
             </HStack>
           </HStack>
-          <Flex className="mobile-none" alignItems={"center"}>
+          <Flex display={{ base: 'none', md: 'block' }} alignItems={"center"}>
             <Link href="#contact">
               <Button
                 variant={"solid"}
@@ -92,18 +123,6 @@ export const Navbar = () => {
             </Link>
           </Flex>
         </Flex>
-
-        {isOpen ? (
-          <Box>
-            <Stack as={"nav"} spacing={4}>
-              {linkNames.map((name, index) => (
-                <NavLink key={name} target={linkTargets[index]}>
-                  {name}
-                </NavLink>
-              ))}
-            </Stack>
-          </Box>
-        ) : null}
       </Box>
     </Box>
   );

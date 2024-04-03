@@ -4,7 +4,7 @@ import { Icon } from "@iconify/react";
 
 export const Project = () => {
   return (
-    <section>
+    <section className="my-16">
       <div>
         <h2 className="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white">
           <Icon icon="ph:code-duotone" width={35} color="#FFF" />

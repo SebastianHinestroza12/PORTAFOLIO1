@@ -7,7 +7,7 @@ import './contact.css'
 
 
 export const Contact = () => {
-  const gradient = 'linear-gradient(to bottom, #FFA500, #000)';
+  const gradient = 'linear-gradient(to bottom, #C21500, #000)';
 
   return (
       <Container
@@ -102,7 +102,7 @@ export const Contact = () => {
                   </Box>
                 </WrapItem>
                 <WrapItem className='wrap-two'>
-                  <Box w={'full'} bg="#101630" borderRadius="lg">
+                <Box w={'full'} bg="black" borderRadius="lg">
                     <Box m={8} color="#FFF">
                       <form action="https://formspree.io/f/xnqkppbd" method="POST">
                         <VStack spacing={5}>

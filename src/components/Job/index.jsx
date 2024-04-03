@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Text } from "@chakra-ui/react";
 import pdf from './CV_SEBASTIAN-MENA.pdf';
+import { Icon } from "@iconify/react";
 
 export const Job = () => {
   return (
@@ -10,6 +11,7 @@ export const Job = () => {
       <a download href={pdf}>
         <Button
           variant={"solid"}
+          paddingX={'6'}
           bg={'#FFC500'}
           size={"md"}
           rounded={'3xl'}
@@ -20,6 +22,7 @@ export const Job = () => {
             color: '#FFF'
           }}
         >
+          <Icon icon="material-symbols-light:download" width={30} />
           Descargar CV
         </Button>
       </a>
