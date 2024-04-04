@@ -5,15 +5,28 @@ import { TAGS } from "../../util";
 
 const EXPERIENCIE = [
   {
+    date: "Noviembre 2023 - Mayo 2024",
+    title: "Backend Developer",
+    company: "SPE SAS.",
+    description: `Lideré la creación de un módulo integral que permitió un
+      control eficiente de todos los activos de la empresa,
+      proporcionando una visión completa y un histórico
+      detallado.
+      Desarrollé servicios API REST que potenciaron la
+      comunicación eficiente entre diversas partes del sistema,
+      facilitando la integración y mejorando la interoperabilidad.`,
+    tags: [TAGS.PHP, TAGS.LARAVEL, TAGS.POSTGRES, TAGS.DOCKER, TAGS.JAVASCRIPT],
+  },
+  {
     date: "Enero 2023 - Agosto 2023",
     title: "Frontend Developer",
-    company: "ITBLOBER",
-    description: `Contribuí al desarrollo y diseño de aplicaciones
-      móviles de alta calidad para clientes utilizando
-      tecnologías modernas de frontend.
-      Realicé pruebas exhaustivas de las interfaces
-      para identificar y solucionar problemas de
-      usabilidad y visualización.`,
+    company: "ITBLOBERS",
+    description: `Contribuí al desarrollo y diseño de aplicaciones móviles de
+      alta calidad para clientes utilizando tecnologías modernas
+      de frontend.
+      Realicé pruebas exhaustivas de las interfaces para
+      identificar y solucionar problemas de usabilidad y
+      visualización.`,
     tags: [
       TAGS.REACT_NATIVE,
       TAGS.TYPESCRIPT,
@@ -23,15 +36,7 @@ const EXPERIENCIE = [
       TAGS.ANDROID,
       TAGS.IOS,
     ],
-  },
-  {
-    date: "Enero 2023 - Agosto 2023",
-    title: "Backend Developer",
-    company: "SPE ESPECIAL",
-    description:
-      "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software. Implantación de medidas de integración continua y despliegue con A/B testing en más de 15 equipos.",
-    tags: [TAGS.PHP, TAGS.LARAVEL, TAGS.POSTGRES, TAGS.DOCKER, TAGS.JAVASCRIPT],
-  },
+  }
 ];
 
 export const Experience = () => {

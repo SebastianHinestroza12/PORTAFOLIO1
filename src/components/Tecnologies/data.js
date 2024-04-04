@@ -13,7 +13,7 @@ export const data = [
     { name: "docker", icon: "skill-icons:docker" },
     { name: "jest", icon: "vscode-icons:file-type-jest" },
     { name: "git", icon: "devicon:git" },
-    { name: "github", icon: "devicon:github" },
+    { name: "github", icon: "skill-icons:github-light" },
     { name: "postman", icon: "devicon:postman" },
     { name: "jira", icon: "logos:jira" },
     { name: "figma", icon: "devicon:figma" }
@@ -22,6 +22,7 @@ export const data = [
   [
     { name: "typescript", icon: "devicon:typescript" },
     { name: "javascript", icon: "logos:javascript" },
+    { name: "jquery", icon: "devicon:jquery" },
     { name: "React", icon: "logos:react" },
     { name: "Next js", icon: "logos:nextjs-icon" },
     { name: "react native", icon: "skill-icons:react-dark" },

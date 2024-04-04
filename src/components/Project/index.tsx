@@ -33,7 +33,11 @@ export const Project = () => {
                 {title}
               </h3>
               <div className="flex flex-wrap mt-2">
-                <ul className="flex flex-row mb-2 gap-x-2 flex-wrap">
+                <div className="mt-2 text-gray-700 dark:text-gray-400">
+                  {description}
+                </div>
+
+                <ul className="flex flex-row my-2 gap-x-2 flex-wrap">
                   {tags.map((tag) => (
                     <li key={tag.name} className="m-1">
                       <div
@@ -46,9 +50,6 @@ export const Project = () => {
                   ))}
                 </ul>
 
-                <div className="mt-2 text-gray-700 dark:text-gray-400">
-                  {description}
-                </div>
                 <footer className="flex items-end justify-start mt-4 gap-x-4">
                   {github && (
                     <a

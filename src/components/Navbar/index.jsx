@@ -43,6 +43,7 @@ export const Navbar = () => {
       top={0}
       zIndex="sticky"
       boxShadow="md"
+      bg={'#121212'}
     >
       <Box py={2}>
 
