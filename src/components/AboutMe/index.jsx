@@ -33,7 +33,7 @@ export const AboutMe = () => {
           <Link href='https://api.whatsapp.com/send?phone=573232883290&text=Hola%20Sebastian,%20me%20intereso%20tu%20perfil.' target='_blank'>
             <Button
               variant={"ghost"}
-              bg={'#FFC500'}
+              bg={'#FFA500'}
               rounded={'3xl'}
               color={'#000'}
               _hover={{

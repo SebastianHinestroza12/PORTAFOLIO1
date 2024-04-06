@@ -32,7 +32,7 @@ export const Project = () => {
               <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100">
                 {title}
               </h3>
-              <div className="flex flex-wrap mt-2">
+              <div className="flex flex-wrap mt-2 flex-col">
                 <div className="mt-2 text-gray-700 dark:text-gray-400">
                   {description}
                 </div>
@@ -53,6 +53,7 @@ export const Project = () => {
                 <footer className="flex items-end justify-start mt-4 gap-x-4">
                   {github && (
                     <a
+                      target="_blank"
                       href={github}
                       className="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 text-base text-white transition bg-gray-800 border border-gray-600 focus-visible:ring-yellow-500/80 text-md hover:bg-gray-800 hover:border-gray-900 group max-w-fit rounded-xl hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"
                     >
@@ -66,11 +67,12 @@ export const Project = () => {
                   )}
                   {link && (
                     <a
+                      target="_blank"
                       href={link}
                       className="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 text-base text-white transition bg-gray-800 border border-gray-600 focus-visible:ring-yellow-500/80 text-md hover:bg-gray-800 hover:border-gray-900 group max-w-fit rounded-xl hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"
                     >
                       <Icon icon="ph:link-bold" width={25} color="#FFF" />
-                      Preview
+                      Demo
                     </a>
                   )}
                 </footer>

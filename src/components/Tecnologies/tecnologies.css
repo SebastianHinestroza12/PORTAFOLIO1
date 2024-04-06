@@ -6,7 +6,7 @@
   overflow: hidden;
   border-style: solid;
   border-width: 4px;
-  border-image: linear-gradient(70deg, #FFC500,  #C21500) 1;
+  border-image: linear-gradient(70deg, #FFA500,  #C21500) 1;
 }
 
 .gradient-tecno{
@@ -14,7 +14,7 @@
   overflow: hidden;
   -webkit-box-shadow: 0px 0px 30px -3px #C21500;
   -moz-box-shadow: 0px 0px 30px -3px #C21500;
-  box-shadow: 0px 0px 20px -4px #FFC500;
+  box-shadow: 0px 0px 20px -4px #FFA500;
 }
 
 .title-tecno{

@@ -7,7 +7,7 @@ import './contact.css'
 
 
 export const Contact = () => {
-  const gradient = 'linear-gradient(to bottom, #C21500, #000)';
+  const gradient = 'repeating-linear-gradient(to bottom, #FFA500, #000)';
 
   return (
       <Container
@@ -37,8 +37,8 @@ export const Contact = () => {
                           justifyContent={'flex-start'}
                           variant="ghost"
                           color="#FFF"
-                          _hover={{ border: '2px solid #FFA500' }}
-                          leftIcon={<MdPhone color="orange" size="20px" />}>
+                        _hover={{ border: '2px solid #000' }}
+                        leftIcon={<MdPhone color="#000" size="20px" />}>
                           +57-3232883290
                         </Button>
                         <Button
@@ -48,8 +48,8 @@ export const Contact = () => {
                           variant="ghost"
                           justifyContent={'flex-start'}
                           color="#FFF"
-                          _hover={{ border: '2px solid #FFA500' }}
-                          leftIcon={<MdEmail color="orange" size="20px" />}>
+                        _hover={{ border: '2px solid #000' }}
+                        leftIcon={<MdEmail color="#000" size="20px" />}>
                           menas7527@gmail.com
                         </Button>
                         <Button
@@ -59,8 +59,8 @@ export const Contact = () => {
                           justifyContent={'flex-start'}
                           variant="ghost"
                           color="#FFF"
-                          _hover={{ border: '2px solid #FFA500' }}
-                          leftIcon={<MdLocationOn color="orange" size="20px" />}>
+                        _hover={{ border: '2px solid #000' }}
+                        leftIcon={<MdLocationOn color="#000" size="20px" />}>
                           Medellín, Colombia
                         </Button>
                       </VStack>

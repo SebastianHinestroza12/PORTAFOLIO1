@@ -22,6 +22,7 @@ const NavLink = (props) => {
       color={'white'}
       textTransform={'uppercase'}
       rounded={"3xl"}
+      fontSize={'sm'}
       _hover={{
         textDecoration: "none",
         bg: '#C21500'
@@ -60,7 +61,7 @@ export const Navbar = () => {
             onClick={isOpen ? onClose : onOpen}
             _hover={{
               textDecoration: "none",
-              bg: '#FFC500'
+              bg: '#FFA500'
             }}
           />
 
@@ -78,7 +79,7 @@ export const Navbar = () => {
 
           <Flex>
             <Text
-              color={'#FFC500'}
+              color={'#FFA500'}
               fontSize={'3xl'}
               fontFamily={'cursive'}
             >
@@ -109,7 +110,7 @@ export const Navbar = () => {
             <Link href="#contact">
               <Button
                 variant={"solid"}
-                bg={'#FFC500'}
+                bg={'#FFA500'}
                 size={"md"}
                 color={'#000'}
                 rounded={"3xl"}

@@ -41,7 +41,7 @@ export const Footer = ()=> {
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}>
         <Flex className="container-text-logo">
-          <Text color={'#FFC500'}
+          <Text color={'#FFA500'}
             fontSize={'3xl'}
             fontFamily={'cursive'}>Mena</Text>
           <Text color={'#C21500'}
