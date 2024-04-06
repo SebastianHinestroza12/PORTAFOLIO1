@@ -5,7 +5,7 @@ import { Zoom } from "react-awesome-reveal";
 
 export const AboutMe = () => {
   return (
-    <section className='flex flex-col sm:flex-col lg:flex-row md:flex-row justify-center items-center' id='about'>
+    <section className='flex flex-col sm:flex-col lg:flex-row md:flex-row justify-center items-center'>
       <Box>
         <Zoom triggerOnce duration={1500}>
           <Box >

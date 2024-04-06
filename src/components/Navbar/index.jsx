@@ -7,7 +7,7 @@ import { Icon } from "@iconify/react";
 
 
 const linkNames = ["Sobre Mi", "Experiencia", "Proyectos", "Tecnologías"];
-const linkTargets = ["#about", "#experiencia", "#projects", "#technologies"];
+const linkTargets = ["#about", "#experience", "#project", "#technologies"];
 
 
 const NavLink = (props) => {

@@ -1,0 +1,27 @@
+
+.section-margin{
+  margin: 0 12rem;
+}
+
+
+/* TABLET */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .section-margin{
+    margin: 0 3rem;
+  }
+}
+
+/* MOBILE */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .section-margin{
+    margin: 0 2rem;
+  }
+}
+
+@media (min-width: 2560px) {
+  .section-margin{
+    margin: 0 33rem;
+  }
+}
