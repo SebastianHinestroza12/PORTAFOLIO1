@@ -16,7 +16,7 @@ export const ExperienceItem = ({ title, company, description, link, date, tags }
             </span>
             <h3 className="text-xl font-bold text-[#FFA500]">{title}</h3>
             <h4 className="font-semibold text-xl text-white">{company}</h4>
-            <time className="p-0 m-0 text-sm text-gray-600">{date}</time>
+            <time className="p-0 m-0 text-sm text-gray-400">{date}</time>
           </div>
         </div>
         <div className="relative flex flex-col gap-2 pb-4 text-white md:col-span-3">

@@ -10,11 +10,16 @@ import { Project } from '../Project';
 import { Contact } from '../Contact';
 import { data, title } from '../Tecnologies/data';
 import { Icon } from "@iconify/react";
+import { ScrollToTopButton } from '../ScrollToTop'
 import './home.css';
 
 export const Home = () => {
   return (
     <main>
+      <Box>
+        <ScrollToTopButton />
+      </Box>
+
       <Box className='section-margin'>
         <Navbar />
         <Job />

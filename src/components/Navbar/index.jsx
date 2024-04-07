@@ -11,7 +11,7 @@ const linkTargets = ["#about", "#experience", "#project", "#technologies"];
 
 
 const NavLink = (props) => {
-  const { children, target } = props;
+  const { children, target, onClick } = props;
   return (
     <Box
       as="a"
@@ -27,6 +27,9 @@ const NavLink = (props) => {
         textDecoration: "none",
         bg: '#C21500'
       }}
+      onClick={() => {
+        onClick();
+      }}
       href={target}
     >
       {children}
@@ -36,6 +39,10 @@ const NavLink = (props) => {
 
 export const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+
+  const closeMenu = () => {
+    onClose();
+  };
 
   return (
     <Box
@@ -66,14 +73,49 @@ export const Navbar = () => {
           />
 
           {isOpen ? (
-            <Box bg={'#121212'}>
-              <Stack as={"nav"} spacing={4}>
+            <Box
+              bg={'#121212'}
+              transform={isOpen ? 'translateX(0)' : 'translateX(100%)'}
+              transition={'transform 0.5s ease-in-out'}
+              position="fixed"
+              top={0}
+              right={0}
+              zIndex={10}
+              h="100vh"
+              w="100%"
+              padding={9}
+            >
+              <Flex justifyContent="space-between" marginBottom={8}>
+                <Text color={'white'} fontSize={'2xl'}>Menú</Text>
+                <IconButton
+                  variant='ghost'
+                  icon={<CloseIcon color={'#C21500'} />}
+                  aria-label="Close Menu"
+                  onClick={closeMenu}
+                  _hover={{
+                    textDecoration: "none",
+                    bg: '#FFA500'
+                  }}
+                />
+              </Flex>
+              <Stack as={"nav"} spacing={0}>
                 {linkNames.map((name, index) => (
-                  <NavLink key={name} target={linkTargets[index]}>
-                    {name}
-                  </NavLink>
+                  <React.Fragment key={name}>
+                    <NavLink key={name} target={linkTargets[index]} onClick={closeMenu}>
+                      {name}
+                    </NavLink>
+                    {index !== linkNames.length - 1 && (
+                      <Box
+                        borderBottom="1px solid white"
+                        width="100%"
+                        height="1px"
+                        my={1}
+                      />
+                    )}
+                  </React.Fragment>
                 ))}
               </Stack>
+
             </Box>
           ) : null}
 
@@ -100,7 +142,7 @@ export const Navbar = () => {
               spacing={4}
             >
               {linkNames.map((name, index) => (
-                <NavLink key={name} target={linkTargets[index]}>
+                <NavLink key={name} target={linkTargets[index]} onClick={closeMenu}>
                   {name}
                 </NavLink>
               ))}
