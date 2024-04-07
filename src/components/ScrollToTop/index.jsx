@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaArrowUp } from 'react-icons/fa';
+import './scroll.css';
 
 export const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -28,7 +29,7 @@ export const ScrollToTopButton = () => {
   };
 
   return (
-    <div className={`fixed bottom-10 right-10 bg-[#FFA500] text-black p-3 rounded-full cursor-pointer ${isVisible ? 'block' : 'hidden'}`} onClick={scrollToTop}>
+    <div className={`fixed bottom-10 right-10 bg-[#FFA500] text-black p-3 rounded-full cursor-pointer ${isVisible ? 'block' : 'hidden'} z-index`} onClick={scrollToTop}>
       <FaArrowUp />
     </div>
   );
