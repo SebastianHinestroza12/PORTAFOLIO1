@@ -7,7 +7,7 @@ const PROJECTS = [
       "Ecommerce para Adquirir los Productos de tu Selección Favorita: Camisetas, Botines, Uniformes Completos y Más. Desarrollado con las Siguientes Tecnologías:",
     link: "https://eccomerce-qatar.vercel.app/",
     github: "https://github.com/SebastianHinestroza12/eccomercePF",
-    image: "https://res.cloudinary.com/dafsjo7al/image/upload/v1712115559/Macbook-Air-eccomerceqatareshop.vercel.app_s787l4.webp",
+    image: "https://res.cloudinary.com/dafsjo7al/image/upload/v1712451392/Macbook-Air-eccomerce-qatar.vercel.app_hgsjac.webp",
     tags: [
       TAGS.NODEJS,
       TAGS.EXPRESS,

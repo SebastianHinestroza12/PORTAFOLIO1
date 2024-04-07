@@ -48,7 +48,7 @@ export const Footer = ()=> {
             fontSize={'3xl'}
             fontFamily={'cursive'}>Dev</Text>
         </Flex>
-        <Text className='text-footer'>© 2023 Sebastian Mena. All rights reserved</Text>
+        <Text className='text-footer'>© 2024 Sebastian Mena. All rights reserved</Text>
         <Stack className='social-footer' direction={'row'}>
           <SocialButton label={'Facebook'} href={'https://www.facebook.com/sebastian.menahinestrosa/'}>
             <FaFacebook />

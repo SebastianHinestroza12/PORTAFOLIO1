@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
-import { Text, Box } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import { Navbar } from '../Navbar';
 import { Job } from '../Job';
 import { AboutMe } from '../AboutMe';
@@ -32,15 +32,15 @@ export const Home = () => {
         <Project />
       </Box>
 
-      <Box className='tecnologies section-margin' id='technologies'>
-        <Box className="flex">
-          <Icon icon="mingcute:computer-fill" width={35} color="#FFF" />
-          <h2 className="text-white text-2xl font-bold text-center flex items-center ml-4">
+      <Box className='section-margin' id='technologies'>
+        <div>
+          <h2 className="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-white">
+            <Icon icon="mingcute:computer-fill" width={35} color="#FFF" />
             Tecnologías
           </h2>
-        </Box>
+        </div>
         <Box
-          display={{ base: 'block', md: 'flex' }} bg={'red.200'}
+          display={{ base: 'block', md: 'flex' }}
           justifyContent={'space-between'}
           alignItems={'center'}
           marginTop={10}
