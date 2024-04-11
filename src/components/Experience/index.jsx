@@ -6,6 +6,7 @@ import { TAGS } from "../../util";
 const EXPERIENCIE = [
   {
     date: "Noviembre 2023 - Mayo 2024",
+    modality: 'Modalidad - Presencial', 
     title: "Backend Developer",
     company: "SPE SAS.",
     description: `Lideré la creación de un módulo integral que permitió un
@@ -19,6 +20,7 @@ const EXPERIENCIE = [
   },
   {
     date: "Enero 2023 - Agosto 2023",
+    modality: 'Modalidad - Remoto',
     title: "Frontend Developer",
     company: "ITBLOBERS",
     description: `Contribuí al desarrollo y diseño de aplicaciones móviles de

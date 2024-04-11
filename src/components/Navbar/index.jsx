@@ -1,8 +1,13 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import {
-  Box, Flex, HStack, IconButton, Button, useDisclosure, Stack, Link, Text
+  Box, Flex, HStack, IconButton, Button, useDisclosure, Stack, Link, Text, Drawer,
+  DrawerBody,
+  DrawerHeader,
+  DrawerOverlay,
+  DrawerContent,
+  DrawerCloseButton,
 } from "@chakra-ui/react";
-import { CloseIcon } from "@chakra-ui/icons";
 import { Icon } from "@iconify/react";
 
 
@@ -40,10 +45,6 @@ const NavLink = (props) => {
 export const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
-  const closeMenu = () => {
-    onClose();
-  };
-
   return (
     <Box
       as="header"
@@ -62,7 +63,7 @@ export const Navbar = () => {
           <IconButton
             variant='ghost'
             size={"md"}
-            icon={isOpen ? <CloseIcon color={'#C21500'} /> : <Icon icon="carbon:menu" width={40} color="#C21500" />}
+            icon={<Icon icon="carbon:menu" width={40} color="#C21500" />}
             aria-label={"Open Menu"}
             display={{ md: "none" }}
             onClick={isOpen ? onClose : onOpen}
@@ -73,50 +74,32 @@ export const Navbar = () => {
           />
 
           {isOpen ? (
-            <Box
-              bg={'#121212'}
-              transform={isOpen ? 'translateX(0)' : 'translateX(100%)'}
-              transition={'transform 0.5s ease-in-out'}
-              position="fixed"
-              top={0}
-              right={0}
-              zIndex={10}
-              h="100vh"
-              w="100%"
-              padding={9}
-            >
-              <Flex justifyContent="space-between" marginBottom={8}>
-                <Text color={'white'} fontSize={'2xl'}>Menú</Text>
-                <IconButton
-                  variant='ghost'
-                  icon={<CloseIcon color={'#C21500'} />}
-                  aria-label="Close Menu"
-                  onClick={closeMenu}
-                  _hover={{
-                    textDecoration: "none",
-                    bg: '#FFA500'
-                  }}
-                />
-              </Flex>
-              <Stack as={"nav"} spacing={0}>
-                {linkNames.map((name, index) => (
-                  <React.Fragment key={name}>
-                    <NavLink key={name} target={linkTargets[index]} onClick={closeMenu}>
-                      {name}
-                    </NavLink>
-                    {index !== linkNames.length - 1 && (
-                      <Box
-                        borderBottom="1px solid white"
-                        width="100%"
-                        height="1px"
-                        my={1}
-                      />
-                    )}
-                  </React.Fragment>
-                ))}
-              </Stack>
-
-            </Box>
+            <Drawer onClose={onClose} isOpen={isOpen} size='xs'>
+              <DrawerOverlay />
+              <DrawerContent bg={'#212121'}>
+                <DrawerCloseButton />
+                <DrawerHeader>{`Menú`}</DrawerHeader>
+                <DrawerBody>
+                  <Stack as={"nav"} spacing={0}>
+                    {linkNames.map((name, index) => (
+                      <React.Fragment key={name}>
+                        <NavLink key={name} target={linkTargets[index]} onClick={() => onClose()}>
+                          {name}
+                        </NavLink>
+                        {index !== linkNames.length - 1 && (
+                          <Box
+                            borderBottom="1px solid white"
+                            width="100%"
+                            height="1px"
+                            my={1}
+                          />
+                        )}
+                      </React.Fragment>
+                    ))}
+                  </Stack>
+                </DrawerBody>
+              </DrawerContent>
+            </Drawer>
           ) : null}
 
           <Flex>
@@ -142,7 +125,7 @@ export const Navbar = () => {
               spacing={4}
             >
               {linkNames.map((name, index) => (
-                <NavLink key={name} target={linkTargets[index]} onClick={closeMenu}>
+                <NavLink key={name} target={linkTargets[index]}>
                   {name}
                 </NavLink>
               ))}
