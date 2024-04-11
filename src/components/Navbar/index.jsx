@@ -7,8 +7,11 @@ import {
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import { Icon } from "@iconify/react";
+import { ButtonColorMode } from '../DarkMode'
+
 
 
 const linkNames = ["Sobre Mi", "Experiencia", "Proyectos", "Tecnologías"];
@@ -24,7 +27,6 @@ const NavLink = (props) => {
       px={2}
       py={1}
       transition={'ease-in'}
-      color={'white'}
       textTransform={'uppercase'}
       rounded={"3xl"}
       fontSize={'sm'}
@@ -52,7 +54,7 @@ export const Navbar = () => {
       top={0}
       zIndex="sticky"
       boxShadow="md"
-      bg={'#121212'}
+      bg={useColorModeValue("#FFF", "#121212")}
     >
       <Box py={2}>
 
@@ -76,8 +78,8 @@ export const Navbar = () => {
           {isOpen ? (
             <Drawer onClose={onClose} isOpen={isOpen} size='xs'>
               <DrawerOverlay />
-              <DrawerContent bg={'#212121'}>
-                <DrawerCloseButton />
+              <DrawerContent>
+                <DrawerCloseButton size={'lg'} />
                 <DrawerHeader>{`Menú`}</DrawerHeader>
                 <DrawerBody>
                   <Stack as={"nav"} spacing={0}>
@@ -149,6 +151,8 @@ export const Navbar = () => {
               </Button>
             </Link>
           </Flex>
+
+          <ButtonColorMode />
         </Flex>
       </Box>
     </Box>

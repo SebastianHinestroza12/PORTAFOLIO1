@@ -7,8 +7,8 @@ export const Project = () => {
   return (
     <section className="my-16">
       <div>
-        <h2 className="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-white">
-          <Icon icon="ph:code-duotone" width={35} color="#FFF" />
+        <h2 className="flex items-center mb-6 text-3xl font-semibold gap-x-3">
+          <Icon icon="ph:code-duotone" width={35} />
           Proyectos
         </h2>
       </div>
@@ -35,9 +35,9 @@ export const Project = () => {
               </div>
 
               <div className="w-full md:w-1/2 md:max-w-lg">
-                <h3 className="text-2xl font-bold text-white">{title}</h3>
+                <h3 className="text-2xl font-bold">{title}</h3>
                 <div className="flex flex-wrap mt-2 flex-col">
-                  <div className="mt-2 text-white">{description}</div>
+                  <div className="mt-2">{description}</div>
 
                   <ul className="flex flex-row my-2 gap-x-2 flex-wrap">
                     {tags.map((tag) => (
@@ -59,11 +59,7 @@ export const Project = () => {
                         href={github}
                         className="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 text-base text-white transition bg-gray-800 border border-gray-600 focus-visible:ring-yellow-500/80 text-md hover:bg-gray-800 hover:border-gray-900 group max-w-fit rounded-xl hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"
                       >
-                        <Icon
-                          icon="mingcute:github-fill"
-                          width={25}
-                          color="#FFF"
-                        />
+                        <Icon icon="mingcute:github-fill" width={25} />
                         Code
                       </a>
                     )}
@@ -73,7 +69,7 @@ export const Project = () => {
                         href={link}
                         className="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 text-base text-white transition bg-gray-800 border border-gray-600 focus-visible:ring-yellow-500/80 text-md hover:bg-gray-800 hover:border-gray-900 group max-w-fit rounded-xl hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"
                       >
-                        <Icon icon="ph:link-bold" width={25} color="#FFF" />
+                        <Icon icon="ph:link-bold" width={25} />
                         Demo
                       </a>
                     )}

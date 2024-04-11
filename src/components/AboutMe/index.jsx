@@ -19,14 +19,13 @@ export const AboutMe = () => {
         marginTop={{ base: 10, sm: 0, md: 0, lg: 0, xl: 0 }}
       >
         <Text
-          color={'#FFF'}
           fontSize={'2xl'}
           marginBottom={2}
           fontWeight={'bold'}
         >
           Sobre mí
         </Text>
-        <Text marginBottom={3} color={'#FFF'}>
+        <Text marginBottom={3}>
           Apasionado del desarrollo de software y la tecnología, me caracterizo por mi constante búsqueda de desafíos y mi compromiso con el crecimiento profesional. Encuentro motivación en explorar el vasto panorama tecnológico, siempre en busca de nuevos conocimientos para enriquecer mi trayectoria. En mi tiempo libre, me dedico a competir en línea en el ajedrez, un juego que estimula mi capacidad estratégica, y a ejercitarme en el gimnasio para mantener un equilibrio entre mente y cuerpo. El fútbol también forma parte de mis actividades recreativas, brindándome momentos de desconexión y diversión.
         </Text>
         <Box>

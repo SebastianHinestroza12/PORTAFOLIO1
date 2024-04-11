@@ -14,7 +14,6 @@ export const Tecnologies = ({ tecnologies, title }) => {
       <Box className='container-tecno'>
         <Box>
           <Text
-            color={'white'}
             textAlign={'center'}
             textTransform={'uppercase'}
             fontWeight={'bold'}
@@ -38,7 +37,6 @@ export const Tecnologies = ({ tecnologies, title }) => {
                   <Text
                     display={'flex'}
                     flexWrap={'wrap'}
-                    color={'white'}
                     textTransform={'uppercase'}
                     fontWeight={'light'}
                     fontSize={'xs'}

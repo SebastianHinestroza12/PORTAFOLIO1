@@ -45,8 +45,8 @@ export const Experience = () => {
   return (
     <Box className="my-16" id="experiencia">
       <Box className="flex">
-        <Icon icon="pajamas:work" width={35} color="#FFF" />
-        <h2 className="text-white text-2xl font-bold text-center flex items-center ml-4">
+        <Icon icon="pajamas:work" width={35} />
+        <h2 className="text-2xl font-bold text-center flex items-center ml-4">
           Experiencia Profesional
         </h2>
       </Box>

@@ -39,8 +39,8 @@ export const Home = () => {
 
       <Box className='section-margin' id='technologies'>
         <div>
-          <h2 className="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-white">
-            <Icon icon="mingcute:computer-fill" width={35} color="#FFF" />
+          <h2 className="flex items-center mb-6 text-3xl font-semibold gap-x-3">
+            <Icon icon="mingcute:computer-fill" width={35} />
             Tecnologías
           </h2>
         </div>
