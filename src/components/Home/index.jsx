@@ -11,17 +11,24 @@ import { Contact } from '../Contact';
 import { data, title } from '../Tecnologies/data';
 import { Icon } from "@iconify/react";
 import { ScrollToTopButton } from '../ScrollToTop'
+import { useTranslation } from 'react-i18next';
 import './home.css';
 
 export const Home = () => {
+  const { t } = useTranslation();
   return (
     <main>
       <Box>
         <ScrollToTopButton />
       </Box>
 
-      <Box className='section-margin'>
+      <Box boxShadow="lg" className="sticky top-0 z-50">
         <Navbar />
+      </Box>
+
+      <h1>{t("message")}</h1>
+
+      <Box className='section-margin'>
         <Job />
       </Box>
 

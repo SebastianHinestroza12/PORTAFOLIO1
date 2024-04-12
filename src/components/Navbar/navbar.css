@@ -1,26 +1,25 @@
-
-.section-margin{
-  margin: 0 12rem;
+.container_header{
+  padding: 0 12rem;
 }
 
 /* TABLET */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  .section-margin{
-    margin: 0 3rem;
+  .container_header{
+    padding: 0 3rem;
   }
 }
 
 /* MOBILE */
 
 @media (min-width: 320px) and (max-width: 480px) {
-  .section-margin{
-    margin: 0 2rem;
+  .container_header{
+    padding: 0 2rem;
   }
 }
 
 @media (min-width: 2560px) {
-  .section-margin{
-    margin: 0 33rem;
+  .container_header{
+    padding: 0 33rem;
   }
 }

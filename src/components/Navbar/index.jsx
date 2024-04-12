@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable react/prop-types */
 import React from "react";
 import {
@@ -11,6 +12,8 @@ import {
 } from "@chakra-ui/react";
 import { Icon } from "@iconify/react";
 import { ButtonColorMode } from '../DarkMode'
+import { LanguageSelector } from "../changeLanguage";
+import './navbar.css'
 
 
 
@@ -49,11 +52,7 @@ export const Navbar = () => {
 
   return (
     <Box
-      as="header"
-      position="sticky"
-      top={0}
-      zIndex="sticky"
-      boxShadow="md"
+      className="container_header"
       bg={useColorModeValue("#FFF", "#121212")}
     >
       <Box py={2}>
@@ -63,22 +62,18 @@ export const Navbar = () => {
           justifyContent={"space-between"}
           flexDirection={{ base: 'row-reverse', md: 'row' }}>
           <IconButton
-            variant='ghost'
+            variant='unstyled'
             size={"md"}
             icon={<Icon icon="carbon:menu" width={40} color="#C21500" />}
             aria-label={"Open Menu"}
             display={{ md: "none" }}
             onClick={isOpen ? onClose : onOpen}
-            _hover={{
-              textDecoration: "none",
-              bg: '#FFA500'
-            }}
           />
 
           {isOpen ? (
             <Drawer onClose={onClose} isOpen={isOpen} size='xs'>
               <DrawerOverlay />
-              <DrawerContent>
+              <DrawerContent bg={useColorModeValue("#FFF", "#121212")}>
                 <DrawerCloseButton size={'lg'} />
                 <DrawerHeader>{`Menú`}</DrawerHeader>
                 <DrawerBody>
@@ -150,6 +145,10 @@ export const Navbar = () => {
                 Contacto
               </Button>
             </Link>
+          </Flex>
+
+          <Flex display={{ base: 'none', md: 'block' }} alignItems={"center"}>
+            <LanguageSelector />
           </Flex>
 
           <ButtonColorMode />
