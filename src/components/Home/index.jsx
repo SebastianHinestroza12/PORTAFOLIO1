@@ -12,6 +12,7 @@ import { data, title } from '../Tecnologies/data';
 import { Icon } from "@iconify/react";
 import { ScrollToTopButton } from '../ScrollToTop'
 import { useTranslation } from 'react-i18next';
+import { LanguageSelector } from '../ChangeLanguage';
 import './home.css';
 
 export const Home = () => {
@@ -20,6 +21,10 @@ export const Home = () => {
     <main>
       <Box>
         <ScrollToTopButton />
+      </Box>
+
+      <Box>
+        <LanguageSelector />
       </Box>
 
       <Box boxShadow="lg" className="sticky top-0 z-50">

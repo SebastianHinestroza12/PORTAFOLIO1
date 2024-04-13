@@ -12,7 +12,6 @@ import {
 } from "@chakra-ui/react";
 import { Icon } from "@iconify/react";
 import { ButtonColorMode } from '../DarkMode'
-import { LanguageSelector } from "../changeLanguage";
 import './navbar.css'
 
 
@@ -128,6 +127,7 @@ export const Navbar = () => {
               ))}
             </HStack>
           </HStack>
+
           <Flex display={{ base: 'none', md: 'block' }} alignItems={"center"}>
             <Link href="#contact">
               <Button
@@ -145,10 +145,6 @@ export const Navbar = () => {
                 Contacto
               </Button>
             </Link>
-          </Flex>
-
-          <Flex display={{ base: 'none', md: 'block' }} alignItems={"center"}>
-            <LanguageSelector />
           </Flex>
 
           <ButtonColorMode />
