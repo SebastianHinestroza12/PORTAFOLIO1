@@ -2,7 +2,7 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import {
-  Box, Flex, HStack, IconButton, Button, useDisclosure, Stack, Link, Text, Drawer,
+  Box, Flex, HStack, IconButton, useDisclosure, Stack, Text, Drawer,
   DrawerBody,
   DrawerHeader,
   DrawerOverlay,
@@ -95,7 +95,7 @@ export const Navbar = () => {
                     ))}
                     <Box marginTop={10}>
                       <Text m={3} textTransform='uppercase'>Idiomas</Text>
-                      <LanguageSelector onClosed={() => onClose()} />
+                      <LanguageSelector />
                     </Box>
                   </Stack>
                 </DrawerBody>
@@ -132,25 +132,6 @@ export const Navbar = () => {
               ))}
             </HStack>
           </HStack>
-
-          {/* <Flex display={{ base: 'none', md: 'block' }} alignItems={"center"}>
-            <Link href="#contact">
-              <Button
-                variant={"solid"}
-                bg={'#FFA500'}
-                size={"md"}
-                color={'#000'}
-                rounded={"3xl"}
-                _hover={{
-                  textDecoration: "none",
-                  bg: '#C21500',
-                  color: '#FFF'
-                }}
-              >
-                Contacto
-              </Button>
-            </Link>
-          </Flex> */}
 
           <ButtonColorMode />
         </Flex>

@@ -5,14 +5,13 @@ import { useTranslation } from 'react-i18next';
 import { Icon } from "@iconify/react";
 import { Flex, Box, Divider } from '@chakra-ui/react'
 
-export const LanguageSelector = ({ onClosed }) => {
+export const LanguageSelector = () => {
   const { i18n } = useTranslation();
   const isSelected = localStorage.getItem('selectedLanguage');
 
   const handleChangeLanguage = (language) => {
     i18n.changeLanguage(language);
     localStorage.setItem('selectedLanguage', language);
-    onClosed();
   };
 
   return (
