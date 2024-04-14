@@ -1,9 +1,49 @@
 {
   "navbar": {
-    "about": "Sobre Mi",
+    "about": "Sobre Mí",
     "experience": "Experiencia",
-    "project": "Proyextos",
+    "project": "Proyectos",
     "technologies": "Tecnologias",
     "contact": "Contacto"
+  },
+  "job": {
+    "greeting": "Hola,  soy",
+    "name": "Sebastian Mena",
+    "position": "Desarrollador Backend",
+    "download": "Descargar CV"
+  },
+  "profile": {
+    "about": "Sobre Mí",
+    "description": "Apasionado del desarrollo de software y la tecnología, me caracterizo por mi constante búsqueda de desafíos y mi compromiso con el crecimiento profesional. Encuentro motivación en explorar el vasto panorama tecnológico, siempre en busca de nuevos conocimientos para enriquecer mi trayectoria. En mi tiempo libre, me dedico a competir en línea en el ajedrez, un juego que estimula mi capacidad estratégica, y a ejercitarme en el gimnasio para mantener un equilibrio entre mente y cuerpo. El fútbol también forma parte de mis actividades recreativas, brindándome momentos de desconexión y diversión.",
+    "contactMe": "Contactame"
+  },
+  "experience": {
+    "title": "Experiencia Profesional",
+    "data_experience": [
+      {
+        "date": "Noviembre 2023 - Mayo 2024",
+        "modality": "Modalidad - Presencial",
+        "title": "Desarrollador Backend",
+        "company": "SPE SAS.",
+        "description": "Lideré la creación de un módulo integral que permitió un control eficiente de todos los activos de la empresa, proporcionando una visión completa y un histórico detallado. Desarrollé servicios API REST que potenciaron la comunicación eficiente entre diversas partes del sistema, facilitando la integración y mejorando la interoperabilidad.",
+        "tags": ["PHP", "LARAVEL", "POSTGRE", "DOCKER", "JAVASCRIPT"]
+      },
+      {
+        "date": "Enero 2023 - Agosto 2023",
+        "modality": "Modalidad - Remoto",
+        "title": "Desarrollador Frontend",
+        "company": "ITBLOBERS",
+        "description": "Contribuí al desarrollo y diseño de aplicaciones móviles de alta calidad para clientes utilizando tecnologías modernas de frontend. Realicé pruebas exhaustivas de las interfaces para identificar y solucionar problemas de usabilidad y visualización.",
+        "tags": [
+          "REACT_NATIVE",
+          "TYPESCRIPT",
+          "VTEX_IO",
+          "GRAPHQL",
+          "JIRA",
+          "ANDROID",
+          "IOS"
+        ]
+      }
+    ]
   }
 }

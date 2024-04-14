@@ -5,5 +5,45 @@
     "project": "Projects",
     "technologies": "Technologies",
     "contact": "Contact"
+  },
+  "job": {
+    "greeting": "Hello, I am",
+    "name": "Sebastian Mena",
+    "position": "Backend Developer",
+    "download": "Download CV"
+  },
+  "profile": {
+    "about": "About Me",
+    "description": "Passionate about software development and technology, I am characterized by my constant pursuit of challenges and my commitment to professional growth. I find motivation in exploring the vast technological landscape, always seeking new knowledge to enrich my career. In my free time, I compete online in chess, a game that stimulates my strategic ability, and I exercise in the gym to maintain a balance between mind and body. Football is also part of my recreational activities, providing me with moments of disconnection and fun.",
+    "contactMe": "Contact Me"
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "data_experience": [
+      {
+        "date": "November 2023 - May 2024",
+        "modality": "Mode - On-site",
+        "title": "Backend Developer",
+        "company": "SPE SAS.",
+        "description": "Led the creation of a comprehensive module that allowed efficient control of all company assets, providing a complete view and detailed history. Developed REST API services that enhanced efficient communication between various parts of the system, facilitating integration and improving interoperability.",
+        "tags": ["PHP", "LARAVEL", "POSTGRE", "DOCKER", "JAVASCRIPT"]
+      },
+      {
+        "date": "January 2023 - August 2023",
+        "modality": "Mode - Remote",
+        "title": "Frontend Developer",
+        "company": "ITBLOBERS",
+        "description": "Contributed to the development and design of high-quality mobile applications for clients using modern frontend technologies. Conducted thorough interface testing to identify and address usability and visualization issues.",
+        "tags": [
+          "REACT_NATIVE",
+          "TYPESCRIPT",
+          "VTEX_IO",
+          "GRAPHQL",
+          "JIRA",
+          "ANDROID",
+          "IOS"
+        ]
+      }
+    ]
   }
 }
