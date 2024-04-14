@@ -1,3 +1,9 @@
 {
-  "message": "Dios es bueno"
+  "navbar": {
+    "about": "Sobre Mi",
+    "experience": "Experiencia",
+    "project": "Proyextos",
+    "technologies": "Tecnologias",
+    "contact": "Contacto"
+  }
 }

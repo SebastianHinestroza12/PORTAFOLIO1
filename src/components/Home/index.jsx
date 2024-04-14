@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Box } from "@chakra-ui/react";
 import { Navbar } from '../Navbar';
 import { Job } from '../Job';
@@ -11,19 +11,22 @@ import { Contact } from '../Contact';
 import { data, title } from '../Tecnologies/data';
 import { Icon } from "@iconify/react";
 import { ScrollToTopButton } from '../ScrollToTop'
-import { useTranslation } from 'react-i18next';
 import { LanguageSelector } from '../ChangeLanguage';
 import './home.css';
 
 export const Home = () => {
-  const { t } = useTranslation();
+
+  useEffect(() => {
+    localStorage.setItem('selectedLanguage', 'es')
+  }, [])
+
   return (
     <main>
       <Box>
         <ScrollToTopButton />
       </Box>
 
-      <Box>
+      <Box display={{ base: 'none', md: 'block' }}>
         <LanguageSelector />
       </Box>
 
@@ -31,7 +34,6 @@ export const Home = () => {
         <Navbar />
       </Box>
 
-      <h1>{t("message")}</h1>
 
       <Box className='section-margin'>
         <Job />

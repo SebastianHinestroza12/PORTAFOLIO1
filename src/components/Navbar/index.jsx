@@ -12,12 +12,12 @@ import {
 } from "@chakra-ui/react";
 import { Icon } from "@iconify/react";
 import { ButtonColorMode } from '../DarkMode'
+import { LanguageSelector } from '../ChangeLanguage';
+import { useTranslation } from 'react-i18next';
 import './navbar.css'
 
-
-
-const linkNames = ["Sobre Mi", "Experiencia", "Proyectos", "Tecnologías"];
-const linkTargets = ["#about", "#experience", "#project", "#technologies"];
+const linkNames = ["navbar.about", "navbar.experience", "navbar.project", "navbar.technologies", "navbar.contact"];
+const linkTargets = ["#about", "#experience", "#project", "#technologies", "#contact"];
 
 
 const NavLink = (props) => {
@@ -48,6 +48,7 @@ const NavLink = (props) => {
 
 export const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const { t } = useTranslation();
 
   return (
     <Box
@@ -80,7 +81,7 @@ export const Navbar = () => {
                     {linkNames.map((name, index) => (
                       <React.Fragment key={name}>
                         <NavLink key={name} target={linkTargets[index]} onClick={() => onClose()}>
-                          {name}
+                          {t(name)}
                         </NavLink>
                         {index !== linkNames.length - 1 && (
                           <Box
@@ -92,6 +93,10 @@ export const Navbar = () => {
                         )}
                       </React.Fragment>
                     ))}
+                    <Box marginTop={10}>
+                      <Text m={3} textTransform='uppercase'>Idiomas</Text>
+                      <LanguageSelector onClosed={() => onClose()} />
+                    </Box>
                   </Stack>
                 </DrawerBody>
               </DrawerContent>
@@ -122,13 +127,13 @@ export const Navbar = () => {
             >
               {linkNames.map((name, index) => (
                 <NavLink key={name} target={linkTargets[index]}>
-                  {name}
+                  {t(name)}
                 </NavLink>
               ))}
             </HStack>
           </HStack>
 
-          <Flex display={{ base: 'none', md: 'block' }} alignItems={"center"}>
+          {/* <Flex display={{ base: 'none', md: 'block' }} alignItems={"center"}>
             <Link href="#contact">
               <Button
                 variant={"solid"}
@@ -145,7 +150,7 @@ export const Navbar = () => {
                 Contacto
               </Button>
             </Link>
-          </Flex>
+          </Flex> */}
 
           <ButtonColorMode />
         </Flex>

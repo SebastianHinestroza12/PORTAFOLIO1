@@ -1,3 +1,9 @@
 {
-  "message": "God is Good"
+  "navbar": {
+    "about": "About Me",
+    "experience": "Experience",
+    "project": "Projects",
+    "technologies": "Technologies",
+    "contact": "Contact"
+  }
 }
