@@ -1,34 +1,18 @@
+// eslint-disable-next-line no-unused-vars
+import React, { useState, useEffect } from "react";
 import { ExperienceItem } from "../ExperienceItem";
 import { Icon } from "@iconify/react";
 import { Box } from "@chakra-ui/react";
 import { TAGS } from "../../util";
+import { useTranslation } from "react-i18next";
+import esTranslation from '../../langs/es/es.json';
+import enTranslation from '../../langs/en/en.json';
 
-const EXPERIENCIE = [
+const EXPERIENCES = [
   {
-    date: "Noviembre 2023 - Mayo 2024",
-    modality: 'Modalidad - Presencial', 
-    title: "Backend Developer",
-    company: "SPE SAS.",
-    description: `Lideré la creación de un módulo integral que permitió un
-      control eficiente de todos los activos de la empresa,
-      proporcionando una visión completa y un histórico
-      detallado.
-      Desarrollé servicios API REST que potenciaron la
-      comunicación eficiente entre diversas partes del sistema,
-      facilitando la integración y mejorando la interoperabilidad.`,
     tags: [TAGS.PHP, TAGS.LARAVEL, TAGS.POSTGRES, TAGS.DOCKER, TAGS.JAVASCRIPT],
   },
   {
-    date: "Enero 2023 - Agosto 2023",
-    modality: 'Modalidad - Remoto',
-    title: "Frontend Developer",
-    company: "ITBLOBERS",
-    description: `Contribuí al desarrollo y diseño de aplicaciones móviles de
-      alta calidad para clientes utilizando tecnologías modernas
-      de frontend.
-      Realicé pruebas exhaustivas de las interfaces para
-      identificar y solucionar problemas de usabilidad y
-      visualización.`,
     tags: [
       TAGS.REACT_NATIVE,
       TAGS.TYPESCRIPT,
@@ -42,16 +26,38 @@ const EXPERIENCIE = [
 ];
 
 export const Experience = () => {
+  const { t, i18n } = useTranslation();
+  const [translation, setTranslation] = useState('');
+
+  useEffect(() => {
+    i18n.language === "es" ? setTranslation('es') : setTranslation('en');
+  }, [i18n.language])
+
+  let EXPERIENCIE = translation === 'es' ? esTranslation.experience.data_experience : enTranslation.experience.data_experience;
+
+  const findTags = (index) => {
+    if (EXPERIENCES[index] && EXPERIENCES[index].tags) {
+      return EXPERIENCES[index].tags;
+    } else {
+      return [];
+    }
+  };
+
+  const EXPERIENCE_CON_TAGS = EXPERIENCIE.map((experience, index) => ({
+    ...experience,
+    tags: findTags(index),
+  }));
+
   return (
     <Box className="my-16" id="experiencia">
       <Box className="flex">
         <Icon icon="pajamas:work" width={35} />
         <h2 className="text-2xl font-bold text-center flex items-center ml-4">
-          Experiencia Profesional
+          {t('experience.title')}
         </h2>
       </Box>
       <ol className="relative mt-16">
-        {EXPERIENCIE.map((experience, index) => (
+        {EXPERIENCE_CON_TAGS.map((experience, index) => (
           <li key={index}>
             <ExperienceItem {...experience} />
           </li>

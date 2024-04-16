@@ -4,7 +4,8 @@
     "experience": "Experiencia",
     "project": "Proyectos",
     "technologies": "Tecnologias",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "languages": "Idiomas"
   },
   "job": {
     "greeting": "Hola,  soy",
@@ -25,24 +26,14 @@
         "modality": "Modalidad - Presencial",
         "title": "Desarrollador Backend",
         "company": "SPE SAS.",
-        "description": "Lideré la creación de un módulo integral que permitió un control eficiente de todos los activos de la empresa, proporcionando una visión completa y un histórico detallado. Desarrollé servicios API REST que potenciaron la comunicación eficiente entre diversas partes del sistema, facilitando la integración y mejorando la interoperabilidad.",
-        "tags": ["PHP", "LARAVEL", "POSTGRE", "DOCKER", "JAVASCRIPT"]
+        "description": "Lideré la creación de un módulo integral que permitió un control eficiente de todos los activos de la empresa, proporcionando una visión completa y un histórico detallado. Desarrollé servicios API REST que potenciaron la comunicación eficiente entre diversas partes del sistema, facilitando la integración y mejorando la interoperabilidad."
       },
       {
         "date": "Enero 2023 - Agosto 2023",
         "modality": "Modalidad - Remoto",
         "title": "Desarrollador Frontend",
         "company": "ITBLOBERS",
-        "description": "Contribuí al desarrollo y diseño de aplicaciones móviles de alta calidad para clientes utilizando tecnologías modernas de frontend. Realicé pruebas exhaustivas de las interfaces para identificar y solucionar problemas de usabilidad y visualización.",
-        "tags": [
-          "REACT_NATIVE",
-          "TYPESCRIPT",
-          "VTEX_IO",
-          "GRAPHQL",
-          "JIRA",
-          "ANDROID",
-          "IOS"
-        ]
+        "description": "Contribuí al desarrollo y diseño de aplicaciones móviles de alta calidad para clientes utilizando tecnologías modernas de frontend. Realicé pruebas exhaustivas de las interfaces para identificar y solucionar problemas de usabilidad y visualización."
       }
     ]
   }

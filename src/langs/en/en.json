@@ -4,7 +4,8 @@
     "experience": "Experience",
     "project": "Projects",
     "technologies": "Technologies",
-    "contact": "Contact"
+    "contact": "Contact",
+    "languages": "Languages"
   },
   "job": {
     "greeting": "Hello, I am",
@@ -25,24 +26,14 @@
         "modality": "Mode - On-site",
         "title": "Backend Developer",
         "company": "SPE SAS.",
-        "description": "Led the creation of a comprehensive module that allowed efficient control of all company assets, providing a complete view and detailed history. Developed REST API services that enhanced efficient communication between various parts of the system, facilitating integration and improving interoperability.",
-        "tags": ["PHP", "LARAVEL", "POSTGRE", "DOCKER", "JAVASCRIPT"]
+        "description": "Led the creation of a comprehensive module that allowed efficient control of all company assets, providing a complete view and detailed history. Developed REST API services that enhanced efficient communication between various parts of the system, facilitating integration and improving interoperability."
       },
       {
         "date": "January 2023 - August 2023",
         "modality": "Mode - Remote",
         "title": "Frontend Developer",
         "company": "ITBLOBERS",
-        "description": "Contributed to the development and design of high-quality mobile applications for clients using modern frontend technologies. Conducted thorough interface testing to identify and address usability and visualization issues.",
-        "tags": [
-          "REACT_NATIVE",
-          "TYPESCRIPT",
-          "VTEX_IO",
-          "GRAPHQL",
-          "JIRA",
-          "ANDROID",
-          "IOS"
-        ]
+        "description": "Contributed to the development and design of high-quality mobile applications for clients using modern frontend technologies. Conducted thorough interface testing to identify and address usability and visualization issues."
       }
     ]
   }

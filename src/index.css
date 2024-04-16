@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 html, body{
-  font-family: 'Poppins', sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   scroll-behavior: smooth;
 }

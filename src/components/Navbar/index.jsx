@@ -94,7 +94,7 @@ export const Navbar = () => {
                       </React.Fragment>
                     ))}
                     <Box marginTop={10}>
-                      <Text m={3} textTransform='uppercase'>Idiomas</Text>
+                      <Text m={3} textTransform='uppercase'>{t('navbar.languages')}</Text>
                       <LanguageSelector />
                     </Box>
                   </Stack>
