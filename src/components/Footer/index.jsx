@@ -1,6 +1,7 @@
 import React from 'react'
 import { Box, chakra, Container, Stack, Text, useColorModeValue, VisuallyHidden, Flex } from '@chakra-ui/react'
 import { FaInstagram, FaFacebook } from 'react-icons/fa'
+import { useTranslation } from 'react-i18next'
 import './footer.css'
 
 
@@ -28,7 +29,8 @@ const SocialButton = ({children,label,href}) => {
   )
 }
 
-export const Footer = ()=> {
+export const Footer = () => {
+  const { t } = useTranslation();
   return (
     <Box
       className='container-footer'>
@@ -48,7 +50,7 @@ export const Footer = ()=> {
             fontSize={'3xl'}
             fontFamily={'cursive'}>Dev</Text>
         </Flex>
-        <Text className='text-footer'>© 2024 Sebastian Mena. All rights reserved</Text>
+        <Text className='text-footer'>{t('footer.copy')}</Text>
         <Stack className='social-footer' direction={'row'}>
           <SocialButton label={'Facebook'} href={'https://www.facebook.com/sebastian.menahinestrosa/'}>
             <FaFacebook />

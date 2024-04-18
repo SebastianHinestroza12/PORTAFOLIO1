@@ -10,7 +10,6 @@ import {
   DrawerCloseButton,
   useColorModeValue,
 } from "@chakra-ui/react";
-import { Icon } from "@iconify/react";
 import { ButtonColorMode } from '../DarkMode'
 import { LanguageSelector } from '../ChangeLanguage';
 import { useTranslation } from 'react-i18next';
@@ -64,7 +63,12 @@ export const Navbar = () => {
           <IconButton
             variant='unstyled'
             size={"md"}
-            icon={<Icon icon="carbon:menu" width={40} color="#C21500" />}
+            icon={<svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="3em"
+              height="3em"
+              viewBox="0 0 50 50">
+              <g fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth={3}><path stroke="#C21500" d="M6.25 25h37.5"></path><path stroke="#FFA500" d="M6.25 12.5h25m-12.5 25h25z"></path></g></svg>}
             aria-label={"Open Menu"}
             display={{ md: "none" }}
             onClick={isOpen ? onClose : onOpen}

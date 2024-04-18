@@ -4,12 +4,13 @@ import { Container, Flex, Link, Box, Heading, IconButton, Button, VStack, HStack
 import { MdPhone, MdEmail, MdLocationOn, MdOutlineEmail } from 'react-icons/md'
 import { BsGithub, BsPerson, BsLinkedin, BsWhatsapp } from 'react-icons/bs'
 import { Footer } from '../Footer';
+import { useTranslation } from 'react-i18next';
 import './contact.css'
 
 
 export const Contact = () => {
   const gradient = 'repeating-linear-gradient(to bottom, #FFA500, #000)';
-
+  const { t } = useTranslation();
   return (
       <Container
         className='contact'
@@ -28,7 +29,7 @@ export const Contact = () => {
               <Wrap className='con-flex'>
                 <WrapItem className='wrap-one'>
                   <Box className='box-contact' w={'full'}>
-                  <Heading>Contacto</Heading>
+                  <Heading>{t('contact.title')}</Heading>
                     <Box py={{ base: 5, sm: 5, md: 8, lg: 8 }}>
                       <VStack pl={0} spacing={3} alignItems="flex-start">
                         <Button
@@ -108,7 +109,7 @@ export const Contact = () => {
                       <form action="https://formspree.io/f/xnqkppbd" method="POST">
                         <VStack spacing={5}>
                           <FormControl id="name">
-                            <FormLabel>Nombre</FormLabel>
+                          <FormLabel>{t('contact.form.name')}</FormLabel>
                             <InputGroup borderColor="#E0E1E7">
                               <InputLeftElement pointerEvents="none">
                                 <BsPerson color="gray.800" />
@@ -117,7 +118,7 @@ export const Contact = () => {
                             </InputGroup>
                           </FormControl>
                           <FormControl id="email">
-                            <FormLabel>Correo</FormLabel>
+                          <FormLabel>{t('contact.form.email')}</FormLabel>
                             <InputGroup borderColor="#E0E1E7">
                               <InputLeftElement pointerEvents="none">
                                 <MdOutlineEmail color="gray.800" />
@@ -126,20 +127,20 @@ export const Contact = () => {
                             </InputGroup>
                           </FormControl>
                           <FormControl id="message">
-                            <FormLabel>Mensaje</FormLabel>
+                          <FormLabel>{t('contact.form.msg')}</FormLabel>
                             <Textarea
-                              required
-                              name='message'
-                              borderColor="gray.300"
-                              _hover={{
-                                borderRadius: 'gray.300',
-                              }}
-                              placeholder="mensaje..."
+                            required
+                            name='message'
+                            borderColor="gray.300"
+                            _hover={{
+                              borderRadius: 'gray.300',
+                            }}
+                            placeholder={t('contact.form.placeholder')}
                             />
                           </FormControl>
                           <FormControl id="submit" float="right">
                             <Button className='button-form' type="submit" variant="solid" bg="#FFA500" color="#000" _hover={{}}>
-                              Enviar Mensaje
+                            {t('contact.form.send')}
                             </Button>
                           </FormControl>
                         </VStack>

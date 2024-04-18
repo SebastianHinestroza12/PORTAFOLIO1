@@ -19,7 +19,7 @@
     "contactMe": "Contactame"
   },
   "experience": {
-    "title": "Experiencia Profesional",
+    "title": "Experiencia Laboral",
     "data_experience": [
       {
         "date": "Noviembre 2023 - Mayo 2024",
@@ -36,5 +36,47 @@
         "description": "Contribuí al desarrollo y diseño de aplicaciones móviles de alta calidad para clientes utilizando tecnologías modernas de frontend. Realicé pruebas exhaustivas de las interfaces para identificar y solucionar problemas de usabilidad y visualización."
       }
     ]
+  },
+  "tecnologies": {
+    "title": "Tecnologias"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "button": "Codigo",
+    "data": [
+      {
+        "title": "Qatar Eshop - Tienda de eCommerce para Productos del Mundial de Qatar",
+        "description": "Ecommerce para Adquirir los Productos de tu Selección Favorita: Camisetas, Botines, Uniformes Completos y Más. Desarrollado con las Siguientes Tecnologías:",
+        "link": "https://eccomerce-qatar.vercel.app/",
+        "github": "https://github.com/SebastianHinestroza12/eccomercePF",
+        "image": "https://res.cloudinary.com/dafsjo7al/image/upload/v1712451392/Macbook-Air-eccomerce-qatar.vercel.app_hgsjac.webp"
+      },
+      {
+        "title": "TrendCinema - Descubre las Últimas Películas en Tendencia",
+        "description": "Aplicaciones móviles que te brinda acceso a las películas más recientes y populares del momento.",
+        "github": "https://github.com/SebastianHinestroza12/App-peliculas",
+        "image": "https://res.cloudinary.com/dafsjo7al/image/upload/c_scale,h_520,w_900/v1712201907/Screenshot_20240403_205813_PeliculasApp_d335ua.webp"
+      },
+      {
+        "title": "TaskFlow - Organiza tus tareas con facilidad",
+        "description": "TaskFlow es una aplicación intuitiva diseñada para ayudarte a gestionar tus tareas diarias de manera eficiente. Con una interfaz fácil de usar, podrás crear, organizar y completar tus tareas en cuestión de segundos.",
+        "link": "https://aplicationtask.netlify.app/",
+        "github": "https://github.com/SebastianHinestroza12/aplication-task-",
+        "image": "https://res.cloudinary.com/dafsjo7al/image/upload/v1712116321/3795208a-e58a-4ab4-b1b3-d70552353128_numdww.webp"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contacto",
+    "form": {
+      "name": "Nombre",
+      "email": "Correo",
+      "msg": "Mensaje",
+      "placeholder": "Escribe tu mensaje...",
+      "send": "Enviar Mensaje"
+    }
+  },
+  "footer": {
+    "copy": "© 2024 Sebastian Mena. Todos los derechos reservados."
   }
 }

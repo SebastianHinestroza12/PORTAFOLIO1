@@ -19,7 +19,7 @@
     "contactMe": "Contact Me"
   },
   "experience": {
-    "title": "Professional Experience",
+    "title": "Work Experience",
     "data_experience": [
       {
         "date": "November 2023 - May 2024",
@@ -36,5 +36,47 @@
         "description": "Contributed to the development and design of high-quality mobile applications for clients using modern frontend technologies. Conducted thorough interface testing to identify and address usability and visualization issues."
       }
     ]
+  },
+  "tecnologies": {
+    "title": "Technologies"
+  },
+  "projects": {
+    "title": "Projects",
+    "button": "Code",
+    "data": [
+      {
+        "title": "Qatar Eshop - eCommerce Store for Qatar World Cup Products",
+        "description": "Ecommerce to Get Products of Your Favorite Team: Jerseys, Cleats, Full Uniforms, and More. Developed with the Following Technologies:",
+        "link": "https://eccomerce-qatar.vercel.app/",
+        "github": "https://github.com/SebastianHinestroza12/eccomercePF",
+        "image": "https://res.cloudinary.com/dafsjo7al/image/upload/v1712451392/Macbook-Air-eccomerce-qatar.vercel.app_hgsjac.webp"
+      },
+      {
+        "title": "TrendCinema - Discover the Latest Trending Movies",
+        "description": "Mobile applications that provide you access to the latest and most popular movies of the moment.",
+        "github": "https://github.com/SebastianHinestroza12/App-peliculas",
+        "image": "https://res.cloudinary.com/dafsjo7al/image/upload/c_scale,h_520,w_900/v1712201907/Screenshot_20240403_205813_PeliculasApp_d335ua.webp"
+      },
+      {
+        "title": "TaskFlow - Organize Your Tasks with Ease",
+        "description": "TaskFlow is an intuitive application designed to help you manage your daily tasks efficiently. With an easy-to-use interface, you can create, organize, and complete your tasks in seconds.",
+        "link": "https://aplicationtask.netlify.app/",
+        "github": "https://github.com/SebastianHinestroza12/aplication-task-",
+        "image": "https://res.cloudinary.com/dafsjo7al/image/upload/v1712116321/3795208a-e58a-4ab4-b1b3-d70552353128_numdww.webp"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "msg": "Message",
+      "placeholder": "Write your message...",
+      "send": "Send Message"
+    }
+  },
+  "footer": {
+    "copy": "© 2024 Sebastian Mena. All rights reserved."
   }
 }

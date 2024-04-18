@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 html, body{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "Jost Variable", system-ui, sans-serif;
   scroll-behavior: smooth;
 }

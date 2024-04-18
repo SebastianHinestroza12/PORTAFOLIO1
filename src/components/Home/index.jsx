@@ -12,12 +12,14 @@ import { data, title } from '../Tecnologies/data';
 import { Icon } from "@iconify/react";
 import { ScrollToTopButton } from '../ScrollToTop'
 import { LanguageSelector } from '../ChangeLanguage';
+import { useTranslation } from 'react-i18next';
 import './home.css';
 
 export const Home = () => {
 
+  const { t } = useTranslation();
   useEffect(() => {
-    localStorage.setItem('selectedLanguage', 'es')
+    localStorage.setItem('selectedLanguage', 'en')
   }, [])
 
   return (
@@ -55,7 +57,7 @@ export const Home = () => {
         <div>
           <h2 className="flex items-center mb-6 text-3xl font-semibold gap-x-3">
             <Icon icon="mingcute:computer-fill" width={35} />
-            Tecnologías
+            {t('tecnologies.title')}
           </h2>
         </div>
         <Box
