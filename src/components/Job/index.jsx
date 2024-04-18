@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import { Button, Text } from "@chakra-ui/react";
-import pdf from './CV_SEBASTIAN-MENA.pdf';
+import pdf from './CV_SEBASTIAN-MENA FULL STACK DEVELOPER.pdf';
 import { useTranslation } from 'react-i18next';
 import { Icon } from "@iconify/react";
 

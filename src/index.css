@@ -2,7 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "poppin";
+  src: url("../public/font/Poppins-Light.ttf") format("truetype");
+}
+
 html, body{
-  font-family: "Jost Variable", system-ui, sans-serif;
+  font-family: 'poppin';
   scroll-behavior: smooth;
 }
