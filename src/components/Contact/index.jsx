@@ -90,16 +90,7 @@ export const Contact = () => {
                           _hover={{ bg: '#0D74FF' }}
                           icon={<BsLinkedin size="28px" />}
                         />
-                      </Link>
-                      <Link href='https://api.whatsapp.com/send?phone=573232883290&text=Hola%20Sebastian,%20me%20intereso%20tu%20perfil.' target='_blank'>
-                        <IconButton
-                          aria-label="Linkedin"
-                          size="lg"
-                          isRound={true}
-                          _hover={{ bg: '#44C052' }}
-                          icon={<BsWhatsapp size="28px" />}
-                        />
-                      </Link>
+                    </Link>
                     </HStack>
                   </Box>
                 </WrapItem>

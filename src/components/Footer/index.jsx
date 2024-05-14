@@ -51,14 +51,6 @@ export const Footer = () => {
             fontFamily={'cursive'}>Dev</Text>
         </Flex>
         <Text className='text-footer'>{t('footer.copy')}</Text>
-        <Stack className='social-footer' direction={'row'}>
-          <SocialButton label={'Facebook'} href={'https://www.facebook.com/sebastian.menahinestrosa/'}>
-            <FaFacebook />
-          </SocialButton>
-          <SocialButton label={'Instagram'} href={'https://www.instagram.com/sebastianmh12'}>
-            <FaInstagram />
-          </SocialButton>
-        </Stack>
       </Container>
     </Box>
   )
