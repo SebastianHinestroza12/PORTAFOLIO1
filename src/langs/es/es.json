@@ -45,24 +45,28 @@
     "button": "Codigo",
     "data": [
       {
-        "title": "Qatar Eshop - Tienda de eCommerce para Productos del Mundial de Qatar",
-        "description": "Ecommerce para Adquirir los Productos de tu Selección Favorita: Camisetas, Botines, Uniformes Completos y Más. Desarrollado con las Siguientes Tecnologías:",
+        "id": 1,
+        "title": "Cryp Wallet - Monedero virtual de criptomonedas",
+        "description": "Cryp Wallet es una billetera virtual de criptomonedas que le permite comprar, enviar, intercambiar y recibir criptomonedas de forma segura y eficiente. Desarrollada con tecnologías modernas, Cryp Wallet ofrece una interfaz intuitiva y funcional, adaptándose tanto a nuevos usuarios como a inversores experimentados en el mundo de las criptomonedas:",
+        "link": "#",
+        "github": "None",
+        "image": [
+          "https://res.cloudinary.com/dafsjo7al/image/upload/v1722744506/wallet-1_1_llobgv.webp",
+          "https://res.cloudinary.com/dafsjo7al/image/upload/v1722744581/wallet-3_ek3te4.webp",
+          "https://res.cloudinary.com/dafsjo7al/image/upload/v1722744583/wallet-2_o6gnxc.webp",
+          "https://res.cloudinary.com/dafsjo7al/image/upload/v1722744581/wallet-4_hmoyw7.webp",
+          "https://res.cloudinary.com/dafsjo7al/image/upload/v1722744582/wallet-5_a7d864.webp"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Qatar Eshop - eCommerce Store for Qatar World Cup Products",
+        "description": "Ecommerce to Get Products of Your Favorite Team: Jerseys, Cleats, Full Uniforms, and More. Developed with the Following Technologies:",
         "link": "https://eccomerce-qatar.vercel.app/",
         "github": "https://github.com/SebastianHinestroza12/eccomercePF",
-        "image": "https://res.cloudinary.com/dafsjo7al/image/upload/v1712451392/Macbook-Air-eccomerce-qatar.vercel.app_hgsjac.webp"
-      },
-      {
-        "title": "TrendCinema - Descubre las Últimas Películas en Tendencia",
-        "description": "Aplicaciones móviles que te brinda acceso a las películas más recientes y populares del momento.",
-        "github": "https://github.com/SebastianHinestroza12/App-peliculas",
-        "image": "https://res.cloudinary.com/dafsjo7al/image/upload/c_scale,h_520,w_900/v1712201907/Screenshot_20240403_205813_PeliculasApp_d335ua.webp"
-      },
-      {
-        "title": "TaskFlow - Organiza tus tareas con facilidad",
-        "description": "TaskFlow es una aplicación intuitiva diseñada para ayudarte a gestionar tus tareas diarias de manera eficiente. Con una interfaz fácil de usar, podrás crear, organizar y completar tus tareas en cuestión de segundos.",
-        "link": "https://aplicationtask.netlify.app/",
-        "github": "https://github.com/SebastianHinestroza12/aplication-task-",
-        "image": "https://res.cloudinary.com/dafsjo7al/image/upload/v1713429625/Macbook-Air-aplicationtask.netlify.app_aikman.webp"
+        "image": [
+          "https://res.cloudinary.com/dafsjo7al/image/upload/v1712451392/Macbook-Air-eccomerce-qatar.vercel.app_hgsjac.webp"
+        ]
       }
     ]
   },
@@ -78,5 +82,10 @@
   },
   "footer": {
     "copy": "© 2024 Sebastian Mena. Todos los derechos reservados."
+  },
+  "modal_repo": {
+    "title": "Seleccione el repositorio para ver",
+    "content": "Servidor",
+    "content_2": "Cliente"
   }
 }

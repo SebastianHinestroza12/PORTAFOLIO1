@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Icon } from "@iconify/react";
 import { Flex, Box, Divider } from '@chakra-ui/react'
@@ -8,6 +8,12 @@ import { Flex, Box, Divider } from '@chakra-ui/react'
 export const LanguageSelector = () => {
   const { i18n } = useTranslation();
   const isSelected = localStorage.getItem('selectedLanguage');
+
+  useEffect(() => {
+    if (!isSelected) {
+      localStorage.setItem('selectedLanguage', 'en');
+    }
+  }, [isSelected]);
 
   const handleChangeLanguage = (language) => {
     i18n.changeLanguage(language);

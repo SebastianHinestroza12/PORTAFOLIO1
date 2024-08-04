@@ -45,24 +45,28 @@
     "button": "Code",
     "data": [
       {
+        "id": 1,
+        "title": "Cryp Wallet - Virtual cryptocurrency wallet",
+        "description": "Cryp Wallet is a virtual cryptocurrency wallet that allows you to buy, send, exchange and receive cryptocurrencies safely and efficiently. Developed with modern technologies, Cryp Wallet offers an intuitive and functional interface, adapting to both new users and experienced investors in the world of cryptocurrencies:",
+        "link": "#",
+        "github": "None",
+        "image": [
+          "https://res.cloudinary.com/dafsjo7al/image/upload/v1722744506/wallet-1_1_llobgv.webp",
+          "https://res.cloudinary.com/dafsjo7al/image/upload/v1722744581/wallet-3_ek3te4.webp",
+          "https://res.cloudinary.com/dafsjo7al/image/upload/v1722744583/wallet-2_o6gnxc.webp",
+          "https://res.cloudinary.com/dafsjo7al/image/upload/v1722744581/wallet-4_hmoyw7.webp",
+          "https://res.cloudinary.com/dafsjo7al/image/upload/v1722744582/wallet-5_a7d864.webp"
+        ]
+      },
+      {
+        "id": 2,
         "title": "Qatar Eshop - eCommerce Store for Qatar World Cup Products",
         "description": "Ecommerce to Get Products of Your Favorite Team: Jerseys, Cleats, Full Uniforms, and More. Developed with the Following Technologies:",
         "link": "https://eccomerce-qatar.vercel.app/",
         "github": "https://github.com/SebastianHinestroza12/eccomercePF",
-        "image": "https://res.cloudinary.com/dafsjo7al/image/upload/v1712451392/Macbook-Air-eccomerce-qatar.vercel.app_hgsjac.webp"
-      },
-      {
-        "title": "TrendCinema - Discover the Latest Trending Movies",
-        "description": "Mobile applications that provide you access to the latest and most popular movies of the moment.",
-        "github": "https://github.com/SebastianHinestroza12/App-peliculas",
-        "image": "https://res.cloudinary.com/dafsjo7al/image/upload/c_scale,h_520,w_900/v1712201907/Screenshot_20240403_205813_PeliculasApp_d335ua.webp"
-      },
-      {
-        "title": "TaskFlow - Organize Your Tasks with Ease",
-        "description": "TaskFlow is an intuitive application designed to help you manage your daily tasks efficiently. With an easy-to-use interface, you can create, organize, and complete your tasks in seconds.",
-        "link": "https://aplicationtask.netlify.app/",
-        "github": "https://github.com/SebastianHinestroza12/aplication-task-",
-        "image": "https://res.cloudinary.com/dafsjo7al/image/upload/v1713429625/Macbook-Air-aplicationtask.netlify.app_aikman.webp"
+        "image": [
+          "https://res.cloudinary.com/dafsjo7al/image/upload/v1712451392/Macbook-Air-eccomerce-qatar.vercel.app_hgsjac.webp"
+        ]
       }
     ]
   },
@@ -78,5 +82,10 @@
   },
   "footer": {
     "copy": "© 2024 Sebastian Mena. All rights reserved."
+  },
+  "modal_repo": {
+    "title": "Select Repository to View",
+    "content": "Backend Repository",
+    "content_2": "Frontend Repository"
   }
 }

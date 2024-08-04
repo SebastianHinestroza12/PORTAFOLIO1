@@ -48,6 +48,7 @@ const NavLink = (props) => {
 export const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { t } = useTranslation();
+  const BG = useColorModeValue("#FFF", "#121212")
 
   return (
     <Box
@@ -61,14 +62,9 @@ export const Navbar = () => {
           justifyContent={"space-between"}
           flexDirection={{ base: 'row-reverse', md: 'row' }}>
           <IconButton
-            variant='unstyled'
+            variant='ghost'
             size={"md"}
-            icon={<svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="3em"
-              height="3em"
-              viewBox="0 0 50 50">
-              <g fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth={3}><path stroke="#C21500" d="M6.25 25h37.5"></path><path stroke="#FFA500" d="M6.25 12.5h25m-12.5 25h25z"></path></g></svg>}
+            icon={<svg xmlns="http://www.w3.org/2000/svg" width="2.5em" height="2.5em" viewBox="0 0 20 20"><path fill="currentColor" d="M3 15h14v-2H3zM3 5v2h14V5zm0 6h14V9H3z" /></svg>}
             aria-label={"Open Menu"}
             display={{ md: "none" }}
             onClick={isOpen ? onClose : onOpen}
@@ -77,7 +73,7 @@ export const Navbar = () => {
           {isOpen ? (
             <Drawer onClose={onClose} isOpen={isOpen} size='xs'>
               <DrawerOverlay />
-              <DrawerContent bg={useColorModeValue("#FFF", "#121212")}>
+              <DrawerContent bg={BG}>
                 <DrawerCloseButton size={'lg'} />
                 <DrawerHeader>{`Menú`}</DrawerHeader>
                 <DrawerBody>

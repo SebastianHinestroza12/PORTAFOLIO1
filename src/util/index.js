@@ -51,7 +51,7 @@ export const TAGS = {
   },
   CHAKRA_UI: {
     name: "Chakra UI",
-    class: "bg-purple-500 text-white",
+    class: "bg-[#347EAA] text-white",
     icon: "devicon:chakraui",
   },
   EXPRESS: {
@@ -113,5 +113,10 @@ export const TAGS = {
     name: "Jira",
     class: "bg-[#1D7AFC] text-white",
     icon: 'devicon-plain:jira',
+  },
+  ZUSTAND: {
+    name: "Zustand",
+    class: "bg-[#453F39] text-white",
+    icon: 'noto-v1:bear',
   },
 };

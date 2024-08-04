@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "poppin";
-  src: url("../public/font/Poppins-Light.ttf") format("truetype");
+  font-family: "Roboto";
+  src: url("../public/font/Roboto-Light.ttf") format("truetype");
 }
 
 html, body{
-  font-family: 'poppin';
+  font-family: "Roboto";
   scroll-behavior: smooth;
 }
