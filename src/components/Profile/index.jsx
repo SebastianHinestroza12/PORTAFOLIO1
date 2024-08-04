@@ -16,7 +16,7 @@ export const Profile = ()=> {
           w={size}
           h={size}
         >
-        <Avatar src="https://res.cloudinary.com/dafsjo7al/image/upload/v1711904110/Ellipse_2_2x_nksiau.png" size="full" position="absolute" top={0} />
+        <Avatar src="https://res.cloudinary.com/dafsjo7al/image/upload/v1711904110/Ellipse_2_2x_nksiau.png" size="full" position="absolute" top={0} filter="drop-shadow(0 0 10px rgba(0, 0, 0, .8))" />
         </Box>
     </Flex>
   )
