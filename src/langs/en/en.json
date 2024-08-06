@@ -24,16 +24,16 @@
       {
         "date": "November 2023 - May 2024",
         "modality": "Mode - On-site",
-        "title": "Backend Developer",
+        "title": "Full Stack Developer",
         "company": "SPE SAS.",
-        "description": "Led the creation of a comprehensive module that allowed efficient control of all company assets, providing a complete view and detailed history. Developed REST API services that enhanced efficient communication between various parts of the system, facilitating integration and improving interoperability."
+        "description": "I improved and optimized a collections module, managing all advisor sales and various points, increasing its performance and usability by 75%, ensuring accuracy and reliability in the handling of figures and money. I designed and created a comprehensive module for the efficient control of all the company's assets, providing a complete vision and a detailed history, allowing all assets to be managed effectively. Developed REST API services that improved communication between various parts of the system, facilitating integration and increasing interoperability."
       },
       {
         "date": "January 2023 - August 2023",
         "modality": "Mode - Remote",
         "title": "Frontend Developer",
         "company": "ITBLOBERS",
-        "description": "Contributed to the development and design of high-quality mobile applications for clients using modern frontend technologies. Conducted thorough interface testing to identify and address usability and visualization issues."
+        "description": "I optimized the geolocation of the La Rebaja project, achieving an 80% increase in speed and readability. Performed extensive testing of interfaces to identify and resolve usability and display issues. Developed mobile and web applications with Vtex IO, ensuring a fluid and efficient user experience."
       }
     ]
   },
@@ -48,7 +48,7 @@
         "id": 1,
         "title": "Cryp Wallet - Virtual cryptocurrency wallet",
         "description": "Cryp Wallet is a virtual cryptocurrency wallet that allows you to buy, send, exchange and receive cryptocurrencies safely and efficiently. Developed with modern technologies, Cryp Wallet offers an intuitive and functional interface, adapting to both new users and experienced investors in the world of cryptocurrencies:",
-        "link": "#",
+        "link": "https://cryp-wallet.vercel.app",
         "github": "None",
         "image": [
           "https://res.cloudinary.com/dafsjo7al/image/upload/v1722744506/wallet-1_1_llobgv.webp",

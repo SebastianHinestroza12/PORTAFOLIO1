@@ -24,16 +24,16 @@
       {
         "date": "Noviembre 2023 - Mayo 2024",
         "modality": "Modalidad - Presencial",
-        "title": "Desarrollador Backend",
+        "title": "Desarrollador Full Stack",
         "company": "SPE SAS.",
-        "description": "Lideré la creación de un módulo integral que permitió un control eficiente de todos los activos de la empresa, proporcionando una visión completa y un histórico detallado. Desarrollé servicios API REST que potenciaron la comunicación eficiente entre diversas partes del sistema, facilitando la integración y mejorando la interoperabilidad."
+        "description": "Mejoré y optimicé un módulo de recaudos, gestionando todas las ventas de asesores y diversos puntos, incrementando su rendimiento y usabilidad en un 75%, asegurando precisión y confiabilidad en el manejo de cifras y dinero. Diseñé y creé un módulo integral para el control eficiente de todos los activos de la empresa, proporcionando una visión completa y un histórico detallado, permitiendo gestionar todos los activos de manera efectiva. Desarrollé servicios API REST que mejoraron la comunicación entre diversas partes del sistema, facilitando la integración y aumentando la interoperabilidad."
       },
       {
         "date": "Enero 2023 - Agosto 2023",
         "modality": "Modalidad - Remoto",
         "title": "Desarrollador Frontend",
         "company": "ITBLOBERS",
-        "description": "Contribuí al desarrollo y diseño de aplicaciones móviles de alta calidad para clientes utilizando tecnologías modernas de frontend. Realicé pruebas exhaustivas de las interfaces para identificar y solucionar problemas de usabilidad y visualización."
+        "description": "Optimicé la geolocalización del proyecto de La Rebaja, logrando un aumento del 80% en la velocidad y legibilidad. Realicé pruebas exhaustivas de las interfaces para identificar y solucionar problemas de usabilidad y visualización. Desarrollé aplicaciones móviles y web con Vtex IO, asegurando una experiencia de usuario fluida y eficiente."
       }
     ]
   },
@@ -48,7 +48,7 @@
         "id": 1,
         "title": "Cryp Wallet - Monedero virtual de criptomonedas",
         "description": "Cryp Wallet es una billetera virtual de criptomonedas que le permite comprar, enviar, intercambiar y recibir criptomonedas de forma segura y eficiente. Desarrollada con tecnologías modernas, Cryp Wallet ofrece una interfaz intuitiva y funcional, adaptándose tanto a nuevos usuarios como a inversores experimentados en el mundo de las criptomonedas:",
-        "link": "#",
+        "link": "https://cryp-wallet.vercel.app",
         "github": "None",
         "image": [
           "https://res.cloudinary.com/dafsjo7al/image/upload/v1722744506/wallet-1_1_llobgv.webp",
