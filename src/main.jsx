@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import { ChakraProvider, ColorModeScript, CSSReset } from '@chakra-ui/react';
 import { I18nextProvider } from 'react-i18next';
